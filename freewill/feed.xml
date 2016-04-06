@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:B28648BF-B36C-44AD-A9BC-9C842A1A728C</id>
+ <title>Page list Atom feed</title>
+ <updated>2011-03-22T11:39:56-04:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:5E86EE11-ECF9-4715-81EC-7A8B85B89E11</id>
+  <title>Workshop and Bootcamp</title>
+  <title xmlns="urn:iweb:">Workshop and Bootcamp</title>
+  <in-navbar xmlns="urn:iweb:">5E86EE11-ECF9-4715-81EC-7A8B85B89E11</in-navbar>
+  <link rel="alternate" href="Workshop_and_Bootcamp.html"/>
+  <updated>2011-03-22T11:39:56.001-04:00</updated>
+  <content>Workshop and Bootcamp</content>
+ </entry>
+</feed>

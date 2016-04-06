@@ -1,0 +1,321 @@
+/*  
+Template Name: LightSpeed
+Theme URI: http://www.thewebhub.com/2008/11/lightspeed/
+Description: A two-column, dark-themed design suitable for personal websites and blogs use. This design fits in a 1024x768 screen resolutions.
+Author: Enjay
+Author URI: http://aboutenjay.com/
+(c)2008 Enjay and TheWebHub.com
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background:url(Images/08.jpg) 5% 0 repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+
+h1, h2, h3, p, ul, ol {
+	margin-top: 0;
+	color: #fff;
+}
+
+h1, h2, h3 {
+	text-transform: lowercase;
+	color: #fff;
+}
+
+h1 {
+	letter-spacing: -2px;
+	font-size: 250%;
+	color: #fff;
+}
+
+h2 {
+	letter-spacing: -1px;
+	font-size: 167%;
+	color: #fff;
+}
+
+h3 {
+	font-size: 123.1%;
+	font-weight: bold;
+	color: #fff;
+}
+
+p, ul, ol {
+	margin-bottom: 1.8em;
+	line-height: 180%;
+	color: #fff;
+}
+
+strong, em {
+	color: #ddd;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #fff;
+}
+
+a:visited {
+	color: #fff;
+	border-bottom: 1px dotted #666;
+}
+
+a:hover {
+	color: ##00CD00;
+	border-bottom-color: #000;
+}
+
+a img {
+	border: none;
+}
+
+/* WRAP - Encloses everything to add the header background. */
+
+/* HEADER - Contains the logo, slogan and menu. */
+
+#header {
+	width: 960px;
+	height: 150px;
+	margin: 0 auto;
+	text-transform:lowercase;
+	color: #fff;
+}
+
+/* LOGO & SLOGAN */
+
+#header h1, #header h2 {
+	margin: 0;
+	text-align: center;
+	color: #fff;
+}
+
+#header h1 {
+	padding-top: 35px;
+	font-size: 350%;
+	color: #fff;
+}
+
+#header a {
+	border: none;
+	color: #fff;
+}
+
+#header a:hover {
+	color: #fff;
+}
+
+/* MENU */
+
+#header ul {
+	margin: 0;
+	padding: 1em 0 0 0;
+	line-height: normal;
+	list-style: none;
+	text-align: center;
+	color: #fff;
+}
+
+#header li {
+	display: inline;
+}
+
+#header li a {
+	padding: 0 1em;
+	font-size: 150%;
+	font-weight: bold;
+	color: #fff;
+}
+
+#header li a:hover {
+	background: url(Images/post_entry_bg.png) repeat-x 0 50%;
+	color: #fff;
+}
+
+/* PAGE - Contains the main content and the sidebar. */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* CONTENT - The main content area. */
+
+#content {
+	float: left;
+	width: 640px;
+	background:url(Images/09.jpg) 5% 0 repeat;
+}
+
+/* POST - Contains a section of the content. Grouping content is neat. */
+
+.post {
+	margin-bottom: 20px;
+}
+
+.post .title {
+	height: 35px;
+	margin: 0;
+	padding: 6px 0 0 20px;
+	background: url(Images/post_title_bg.png) repeat-x;
+	font-size: 153.9%;
+	font-weight: normal;
+	color: #fff;
+}
+
+.post .title a {
+	border: none;
+	color: #fff;
+}
+
+.post .entry {
+	padding: 20px 20px 1px 20px;
+	background: url(Images/post_entry_bg.png);
+    P: text-indent: 30pt;
+	font-size:17px;
+	font-weight:bold;
+	}
+
+.post .byline {
+	font-size: smaller;
+	color: #666;
+}
+
+.post .byline a {
+	font-weight: bold;
+	color: #999;
+}
+
+.post .meta {
+	background: url(Images/post_meta_bg.png);
+	border-top: 1px solid #000;
+}
+
+.post .meta p {
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #000;
+	line-height: normal;
+	color: #666;
+}
+
+.post .meta a {
+	border: none;
+	color: #999;
+}
+
+.post .meta a:hover {
+	color: #fff;
+}
+
+.post .meta .tags {
+	padding-left: 30px;
+	background: url(Images/tag_green.png) no-repeat 10px 50%;
+}
+
+.post .meta .tags a {
+}
+
+.post .meta .links {
+}
+
+.post .meta .links a {
+	padding-left: 22px;
+}
+
+.post .meta .comments {
+	background: url(Images/comments.png) no-repeat 0 50%;
+}
+
+.post .meta .permalink {
+	background: url(Images/world_link.png) no-repeat 0 50%;
+}
+
+.post .meta .more {
+	background: url(Images/bullet_go.png) no-repeat 0 50%;
+}
+
+/* SIDEBAR - For extra links and ad spaces. */
+
+#sidebar {
+	float: right;
+	width: 300px;
+	background:url(Images/09.jpg) 5% 0 repeat;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+#sidebar li {
+}
+
+#sidebar li ul {
+	padding: 10px;
+}
+
+#sidebar li li {
+	padding: 2px 0;
+	border-bottom: 1px dotted #333;
+}
+
+#sidebar li li a {
+	border: none;
+	font-weight: bold;
+	font-size: 115%;
+}
+
+#sidebar li li a:hover {
+	padding-left: 10px;
+	color: #fff;
+}
+
+#sidebar h2 {
+	height: 35px;
+	margin: 0;
+	padding: 6px 0 0 20px;
+	background: url(Images/post_title_bg.png) repeat-x;
+	font-size: 153.9%;
+	font-weight: normal;
+	color: #fff;
+}
+
+#sidebar .pad {
+	padding: 10px;
+}
+
+
+#footer {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-top: 1px solid #000;
+	text-align: right;
+	font-size: smaller;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+}
+
+#footer .legal img {
+	margin-top: 1em;
+	float:right;
+}
+
+/* Form resizer */
+
+.form { 
+        font-size: 16px; color=#990000; 
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}

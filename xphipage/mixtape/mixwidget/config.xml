@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget version="2.1" flashVersion="9.0.0"> 
+  <title>Experimental Philosophy Mix Tape 1</title> <!-- shown at opening -->
+  <creator>alison niedbalski</creator>         <!-- shown at opening -->
+  <image rotation="0" x="0" scale="20" y="0" mask="body"></image> 
+  <!-- comment out image tag to remove image -->
+  <skin imageEnabled="true">
+  <!--set imageEnabled to anything but true to disable -->
+    <shadow>0</shadow>                   <!-- 0-100 -->
+    <gloss>0</gloss>                    <!-- 0-100 -->
+    <outlines>0</outlines>              <!-- 0-100 -->
+    <frameColor>CCCCCC</frameColor>      <!-- hex color-->
+    <bodyColor>66CCFF</bodyColor>        <!-- hex color-->
+    <gearboxColor>CCCCCC</gearboxColor>  <!-- hex color-->
+    <gearColor>598B9F</gearColor>        <!-- hex color-->
+    <threaderColor>CCCCCC</threaderColor><!-- hex color-->
+    <text size="25" color="#000000" bgAlpha="0" bgColor="FFFFFF" align="RIGHT"></text>
+    <!-- bgAlpha = 0-100, align = LEFT, CENTER, RIGHT -->
+    <trackText x="26" y="21" width="260"></trackText>
+    <artistText x="28" y="38" width="260"></artistText>    
+  </skin>
+</widget>

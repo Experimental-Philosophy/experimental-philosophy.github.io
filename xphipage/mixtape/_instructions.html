@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>mixwidget.org - instructions</title>
+	
+	<script src="resources/swfobject.js" type="text/javascript"></script>
+	
+<style type="text/css">
+<!--
+.main_title {
+	color: #666;
+}
+.subtitle {
+	color: #95AE00;
+	margin-bottom: 0px;
+}
+.text {
+	color: #333;
+}
+-->
+</style>
+</head>
+
+<body>
+
+	<table width="100%" border="0" cellpadding="20">
+	  <tr>
+	    <td valign="top">
+	      <h2 class="subtitle"><em>mixwidget.org: the open source mixtape</em></h2>
+	      <h2 style="margin-bottom:0px">Instructions</h3>
+	      <table width="100%" border="0" cellspacing="5" cellpadding="0">
+	        <tr>
+	          <td width="160"><p>what's here:</p></td>
+	          <td>&nbsp;</td>
+            </tr>
+	        <tr>
+	          <td>mixwidget folder</td>
+	          <td><em>all custom files for the mixwidget</em></td>
+            </tr>
+	        <tr>
+	          <td>resources folder</td>
+	          <td><em>useful files for the html pages</em></td>
+            </tr>
+	        <tr>
+	          <td><a href="index.html">index.html</a></td>
+	          <td><em>basic page for displaying your mixtape</em></td>
+            </tr>
+	        <tr>
+	          <td><a href="sample_embed.html">sample_embed.html</a></td>
+	          <td><em>code and instructions for embedding on a third-party site</em></td>
+            </tr>
+	        <tr>
+	          <td><a href="sample_fullscreen.html">sample_fullscreen.html</a></td>
+	          <td><em>example of a fullscreen widget</em></td>
+            </tr>
+          </table>
+	      <p><em>Note: these instructions can also be found online: <a href="http://mixwidget.org/howto"><strong>http://mixwidget.org/howto</strong></a></em><strong></strong></p>
+	      
+	      <h2><strong>how to use</strong> - playback</h2>
+          <p>To get started, <a href="http://mixwidget.org/download">download the demo file.</a></p>
+        <div style="background: #BFDCFF; border: 1px solid black; padding: 5px">
+          <p><strong>play on your desktop</strong></p>
+          <ol>
+            <li>Click <a style="color: #00BF3E; font-size: 1.25em" href="index.html" target="_blank"><em><strong>index.html</strong></em></a> to view in a browser.</li>
+            <li>Press the big play button on the cassette.</li>
+            <li>If nothing plays then you'll have to update your <a href="#localsecurity"> update your local Flash Player security settings</a>
+          </ol>
+        </div>
+          <p><strong>play via the internet</strong></p>
+          <ol>
+            <li>Unzip and upload the example folder to your host <em><strong>public_html</strong></em> folder.</li>
+            <li>If necessary, change permissions (recursively) for the <em><strong>mixwdget-example</strong></em> folder to 755.</li>
+            <li>Check it out: <em><strong>http:// (your-site.com) /mixwidget-demo/</strong></em></li>
+          </ol>
+          <p><strong>embed in webpage, myspace, or blog</strong></p>
+          <ol>
+            <li>Upload the example folder to a host (see &quot;play via the internet&quot; steps above).</li>
+            <li>Open <em><strong>embed.html</strong></em> in a text editor (or view source in a browser).</li>
+            <li>Copy the embed code:<br/>
+              <br/>
+              <strong><em>&lt;embed width=&quot;430&quot; height=&quot;330&quot; type=&quot;application/x-shockwave-flash&quot; src=&quot;mixwidget/mixwidget.swf&quot; wmode=&quot;transparent&quot;&gt;&lt;/embed&gt;</em></strong><br/>
+              <br/>
+            </li>
+            <li>In your copied code, update the <em><strong>src</strong></em> path to point to your host:<br/>
+              <br/>
+              <em><strong>http:// (your-site.com) /mixwidget-demo/mixwidget/mixwidget.swf</strong></em><br/>
+              <br/>
+            </li>
+            <li>Add the embed code to the new site.</li>
+            <li>Try it out.<br />
+              <!-- <p>Included in the zip folder are all of the files necessary to post your mixtape on your blog, website, and/or social network. Most of the stuff is pretty self-explanatory so the simplest solution play around with the settings in <em><strong>config.xml</strong></em> and add/remove tracks in <em><strong>playlist.xspf</strong></em>.</p>
+<p>If you need to embed the widget on a third party service (like MySpace or Wordpress), use the embed code located in <em><strong>embed.html</strong></em>.</p> -->
+            </li>
+          </ol>
+          <p><strong><a name="localsecurity" id="localsecurity"></a>how to update your  Flash Player security settings for desktop playback</strong></p>
+          <p>Flash is careful about preventing outside websites and services from accessing your local files. This includes &quot;safe&quot; stuff like music files, pictures, and xml.</p>
+          <p>This setting only needs to be changed once for this example (as long as you don't move the folder) and  will allow only the folder access to online content; your other folders &amp; files will not be affected. Please note that these settings work for the example file only - your custom mixwidget may require more work.</p>
+          <ol>
+            <li>Navigate to your
+              <a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04a.html">Adobe Flash Security Settings</a>
+            </li>
+            <li>This link will take to to a webpage containing your security control panel. Yes it looks like a webpage, yes it really controls your local player settings, and yes Adobe/Macromedia developers are all  on crack.</li>
+            <li>You should be in the &quot;Global Security Settings&quot; panel/tab</li>
+            <li>Open the &quot;Edit locations...&quot; combo box</li>
+            <li>Select &quot;Add location...&quot;</li>
+            <li>Press &quot;Browse for folder...&quot;</li>
+            <li>Navigate to your local <em><strong>mixtape folder</strong></em> (ex. ~/mixes/mixwidget-example, c:/mixes/my-rad-mix). *</li>
+            <li>Press &quot;Select&quot; or &quot;OK&quot; to allow.</li>
+            <li>Confirm your local path is listed in the &quot;Always trust files in these locations:&quot; list window.</li>
+            <li>Open or refresh your index.html in your mixtape folder</li>
+            <li>All tracks that are still available should play (many probably won't be)</li>
+          </ol>
+          
+          <em>* it will permit the highest level you go up in the directory so if you did c:/mixes you won't have this problem
+          for any mixes placed in c:/mixes</em>
+
+        <p class="text">For instructions on how to customize, please visit <a href="http://mixwidget.org/howto">mixwidget.org/howto</a>.</p></td>
+	    <td width="470" align="center" valign="top"><div id="flash_embed"> 
+	      <blockquote>
+	        <p>Oh no, something's missing!<br>
+            Mixwidget requires  Flash Player version 9 or newer.</p>
+	        Please press the following button to get the new version.
+            <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /> </a></p>
+          </blockquote>
+	    </div></td>
+      </tr>
+</table>
+<script type="text/javascript">
+		var flashvars = { 
+		  // playlist: yourplaylist.xspf,
+		  // config:   yourconfig.xml,
+		  // image:    yourimage.jpg,
+		  // skin:     skin.jpg
+		  };
+		var params = { allowscriptaccess: "always", wmode: "transparent" };
+		var attributes = { id: "mixwidget"}; // change if embedding more than 1 
+		swfobject.embedSWF("mixwidget/mixwidget.swf", "flash_embed", "430", "330", "9.0.0", "expressInstall.swf", flashvars, params, attributes);
+	</script>
+	
+</body>
+</html>

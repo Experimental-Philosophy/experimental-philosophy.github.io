@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Experimental Philosophy-Reference</title>
+
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #6F7D94;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+
+
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background: #93A5C4;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background: #8090AB;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #6F7D94;
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #6F7D94;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.xpapers_abstract { font-size:smaller; padding:4px }
+.xpapers_title { font-weight:bold; font-size:larger;}
+.xpapers_pubInfo { color : #15317E }
+
+
+/******** this was taken from http://www.dynamicdrive.com/style/csslibrary/item/nested_side_bar_menu/ to create the pop-out menu on the side-bar. ***********/
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 14%; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+position: fixed;
+  float: left;
+  
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background-color: #6F7D94; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+background-color: black;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(/Images/right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+</style>
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="http://pantheon.yale.edu/~jk762/ExperimentalPhilosophy.html"><img src="Images/images (1).jpeg" alt="Insert Logo Here" name="Insert_logo" width="276" height="148" id="Insert_logo" style="background: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+    <div class="sidebarmenu">
+<ul id="sidebarmenu1">
+  <li><a href="#">X-Phi of Action</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Free%20Will.html">Free Will</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Intentional%20Action.html">Intentional Action</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Action%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Language</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Reference.html">Reference</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Language%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Mind</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Consciousness.html">Consciousness</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Mind%20Misc.html">Misc.</a></li>
+  </ul>
+</li>
+<li><a href="#">X-Phi of Ethics</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Folk%20Morality.html">Folk Morality</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Ethics%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Epistemology</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Contextualism%20Invariantism.html">Contextualism and Invariantism</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Epistemology%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">X-Phi of Metaphysics</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Causation.html">Causation</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Metaphysics%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">Foundations of X-Phi</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Critiques.html">Critiques of X-Phi</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Foundations%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">Misc. X-Phi</a></a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Cross%20Cultural.html">Cross Cultural Research</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Misc.html">Misc.</a>
+  </li>
+</ul></li>
+<li><a
+  href="#">Other</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Social%20Media.html">Social Media</a>
+  <ul>
+  <li><a href="https://plus.google.com/106694220497786919487/">Google+</a><li>
+  <li><a href="https://www.facebook.com/pages/Experimental-Philosophy-X-Phi/119719687891">Facebook</a></li>
+  <li><a href="http://twitter.com/xphilosopher">Twitter</a></li>
+  <li><a href="http://www.youtube.com/user/xphilosophy">YouTube</a></li>
+  </ul></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Organizations.html">Labs
+  and Organizations</a></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Press.html">Press</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Books.html">Books</a></li>
+   <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Secrets.html">?</a>
+  </ul></li>
+<p></p>Know of a paper that should be here but isn't? Try adding it to the xphi of  <a href ="http://philpapers.org/browse/experimental-philosophy-reference"><b>reference</b></a> <br /> category on <a href="http://philpapers.org/">PhilPapers</a></p></ul>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1>Press</h1>
+   <div id="xpapers_gadget"></div>
+<p><a href="http://www.nytimes.com/2007/12/09/magazine/09wwln-idealab-t.html" class="external text" title="http://www.nytimes.com/2007/12/09/magazine/09wwln-idealab-t.html" rel="nofollow">The New New Philosophy</a>
+  </p>
+  <dl><dd>Kwame Anthony Appiah, <i>New York Times</i>
+  </dd>
+  </dl>
+  <p>&nbsp;</p>
+  <p><a href="http://www.slate.com/id/2137223/" class="external text" title="http://www.slate.com/id/2137223/" rel="nofollow">The X-Philes <i>Philosophy meets the real world</i></a>
+  </p>
+  <dl><dd>Jon Lackman, <i>Slate</i>
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://chronicle.com/free/v55/i06/06b00901.htm" class="external text" title="http://chronicle.com/free/v55/i06/06b00901.htm" rel="nofollow">Against Intuition</a>
+  </p>
+  <dl><dd>Christopher Shea, <i>Chronicle of Higher Education</i>
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://www.npr.org/templates/story/story.php?storyId=17815241" class="external text" title="http://www.npr.org/templates/story/story.php?storyId=17815241" rel="nofollow">Next Big Thing</a>
+  </p>
+  <dl><dd>Anthony Appiah, <i>Talk of the Nation</i> on National Public Radio
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://life.bio.sunysb.edu/%7Emassimo/essays/2009-SI-experimental%20philosophy.pdf" class="external text" title="http://life.bio.sunysb.edu/%7Emassimo/essays/2009-SI-experimental%20philosophy.pdf" rel="nofollow"><i>Experimental Philosophy, an Oxymoron?</i></a> 
+  </p>
+  <dl><dd>Massimo Pigliucci, <i>Skeptical Inquirer</i>
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://www.prospect-magazine.co.uk/article_details.php?id=10638" class="external text" title="http://www.prospect-magazine.co.uk/article_details.php?id=10638" rel="nofollow"><i>Philosophy's Great Experiment</i></a>
+  </p>
+  <dl><dd>David Edmonds &amp; Nigel Warburton, <i>Prospect</i> magazine
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://experimentalphilosophy.typepad.com/.a/6a00d83452050c69e20115713ba6f7970c-popup" class="external text" title="http://experimentalphilosophy.typepad.com/.a/6a00d83452050c69e20115713ba6f7970c-popup" rel="nofollow">Süddeutsche Zeitung</a>
+  </p>
+  <dl><dd>Malte Dahlgrün, <i>Süddeutsche Zeitung</i>. (in German)
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://georgiamada.splinder.com/post/20142937" class="external text" title="http://georgiamada.splinder.com/post/20142937" rel="nofollow">X-PHI, Filosofi del domanin</a>  
+  </p>
+  <dl><dd>Massimiliano Panarari, <i>La Repubblica</i>. (in Italian)
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://www.robinengelhardt.info/xphi.pdf" class="external text" title="http://www.robinengelhardt.info/xphi.pdf" rel="nofollow">Det store filosofiske eksperiment</a>
+  </p>
+  <dl><dd>Robin Engelhardt, <i>Ingeniøren</i> (in Norwegian)
+  </dd></dl>
+  <p>&nbsp;</p>
+  <p><a href="http://nplusonemag.com/goedel-in-hong-kong" class="external text" title="http://nplusonemag.com/goedel-in-hong-kong" rel="nofollow">Gödel in Hong Kong: Two books on "x-phi"</a>
+  </p>
+  <dl><dd> Justin E. H. Smith, "n +1"
+  </dd></dl>
+  </p></div>
+  <div class="footer">
+    <p>If you have questions or concerns about this site, please get in touch with <a href="http://pantheon.yale.edu/~jp677/Jonathan_Phillips.html">Jonathan Phillips</a></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

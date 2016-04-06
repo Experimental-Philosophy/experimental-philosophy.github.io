@@ -1,0 +1,303 @@
+.Body {
+    color: rgb(33, 38, 0);
+    font-family: 'Palatino-Roman', 'Palatino', serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Body_Small {
+    color: rgb(39, 33, 0);
+    font-family: 'LucidaGrande', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 10px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 12px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 4px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.Normal_External_644_468 {
+    position: relative;
+}
+.Normal {
+    padding: 4px;
+}
+.graphic_generic_body_textbox_style_default_SkipStroke {
+    background: transparent;
+    opacity: 1.00;
+}
+.paragraph_style_1 {
+    color: rgb(39, 33, 0);
+    font-family: 'LucidaGrande', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 37px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 44px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.paragraph_style {
+    color: rgb(39, 33, 0);
+    font-family: 'LucidaGrande', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 10px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 12px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.style {
+    color: rgb(0, 0, 0);
+    font-family: 'Times-Roman', 'Times', 'Times New Roman', serif;
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 1.00;
+}
+.style_SkipStroke {
+    background: transparent;
+    opacity: 1.00;
+}
+.style_SkipStroke_2 {
+    background: transparent url(backgroundimage_1_1.png) no-repeat scroll center center;
+    opacity: 1.00;
+}
+.style_1 {
+    font-family: 'Times-Roman', 'Times', 'Times New Roman', serif;
+    font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.style_SkipStroke_3 {
+    background: transparent;
+    opacity: 1.00;
+}
+.paragraph_style_2 {
+    color: rgb(94, 94, 94);
+    font-family: 'Palatino-Roman', 'Palatino', serif;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.style_SkipStroke_1 {
+    background: transparent;
+    opacity: 0.10;
+}
+.graphic_image_style_default_SkipStroke {
+    background: transparent;
+    opacity: 1.00;
+}
+.graphic_textbox_layout_style_default {
+    padding: 4px;
+}
+.graphic_textbox_layout_style_default_External_1202_81 {
+    position: relative;
+}
+.graphic_textbox_style_default_SkipStroke {
+    background: transparent;
+    opacity: 1.00;
+}
+a {
+    color: rgb(39, 40, 69);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class1 {
+    color: rgb(94, 94, 94);
+}
+a.class1:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class1:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+a.class2 {
+    color: rgb(94, 94, 94);
+}
+a.class2:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class2:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+a.class3 {
+    color: rgb(94, 94, 94);
+}
+a.class3:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class3:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+a.class4 {
+    color: rgb(94, 94, 94);
+}
+a.class4:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class4:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+a.class5 {
+    color: rgb(94, 94, 94);
+}
+a.class5:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class5:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+a.class6 {
+    color: rgb(94, 94, 94);
+}
+a.class6:visited {
+    color: rgb(125, 131, 137);
+    text-decoration: none;
+}
+a.class6:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+a:hover {
+    color: rgb(15, 50, 107);
+    text-decoration: underline;
+}
+.bumper {
+    font-size: 1px;
+    line-height: 1px;
+}
+.spacer {
+    font-size: 1px;
+    line-height: 1px;
+}
+.tinyText {
+    font-size: 1px;
+    line-height: 1px;
+}
+body { 
+    -webkit-text-size-adjust: none;
+}
+div { 
+    overflow: visible; 
+}
+img { 
+    border: none; 
+}
+.InlineBlock { 
+    display: inline; 
+}
+.InlineBlock { 
+    display: inline-block; 
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom:0.3em;
+}
+.inline-block.shape-with-text {
+    vertical-align: bottom;
+}
+.vertical-align-middle-middlebox {
+    display: table;
+}
+.vertical-align-middle-innerbox {
+    display: table-cell;
+    vertical-align: middle;
+}
+div.paragraph {
+    position: relative;
+}
+li.full-width {
+    width: 100;
+}
+#body_content #body_layer .style_SkipStroke_3.shape-with-text.flowDefining .text-content.Normal_External_644_468 .Normal a {
+	text-align: right;
+}
+#body_content #header_layer .tinyText.style_SkipStroke .paragraph_style_1 {
+	font-size: 10px;
+}
+#body_content #header_layer .tinyText.style_SkipStroke .paragraph_style_1 a {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}

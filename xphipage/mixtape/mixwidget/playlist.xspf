@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+  <title>Experimental Philosophy Mix Tape 1</title>
+  <creator>X-phi</creator>
+  <trackList>
+    <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track1.mp3</location>
+      <title>The Underdog</title>
+      <creator>Spoon</creator>
+      <album>Ga Ga Ga Ga Ga</album>
+      <duration></duration>
+    </track>
+    <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track2.mp3</location>
+      <title>Prove It</title>
+      <creator>Television</creator>
+      <album>Marquee Moon</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track3.mp3</location>
+      <title>Typical</title>
+      <creator>Mutemath</creator>
+      <album>Mutemath</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track4.mp3</location>
+      <title>The Last Dictator</title>
+      <creator>Spacehog</creator>
+      <album>Resident Alien</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track5.mp3</location>
+      <title>This Masquerade</title>
+      <creator>Leon Russell</creator>
+      <album>Carney</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track6.mp3</location>
+      <title>You Can Never Hold Back Spring</title>
+      <creator>Tom Waits</creator>
+      <album>The First Days of Spring</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track7.mp3</location>
+      <title>Stories of the Streets</title>
+      <creator>Leonard Cohen</creator>
+      <album>Songs of Leonard Cohen</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track8.mp3</location>
+      <title>Fight Test</title>
+      <creator>The Flaming Lips</creator>
+      <album>Fight Test</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track9.mp3</location>
+      <title>Burning Down the House</title>
+      <creator>Talking Heads</creator>
+      <album>The Best of Talking Heads</album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track10.mp3</location>
+      <title>Revolution (Parts 1 & 2)</title>
+      <creator>Nina Simone</creator>
+      <album>Essential Nina Simone</album>
+      <duration></duration>
+    </track>
+  <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track11.mp3</location>
+      <title>Philosophy</title>
+      <creator>Ben Folds Five</creator>
+      <album>Ben Folds Five</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track12.mp3</location>
+      <title>My Rights Versus Yours</title>
+      <creator>The New Pornographers</creator>
+      <album>Challengers</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track13.mp3</location>
+      <title>This Will Be Our Year</title>
+      <creator>OK Go</creator>
+      <album>Covers</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track14.mp3</location>
+      <title>Knot Comes Loose</title>
+      <creator>My Morning Jacket</creator>
+      <album>Z</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track15.mp3</location>
+      <title>It's Got the Whole World Shaking</title>
+      <creator>Sam Cooke</creator>
+      <album>Soul Folks</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track16.mp3</location>
+      <title>Intuition</title>
+      <creator>John Lennon</creator>
+      <album>Working Class Hero</album>
+      <duration></duration>
+    </track>
+<track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track17.mp3</location>
+      <title>Experiment</title>
+      <creator>Tony Bennett</creator>
+      <album>Life is Beautiful</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track18.mp3</location>
+      <title>No Regrets (Je Ne Regrette Rien)</title>
+      <creator>Edith Piaf</creator>
+      <album>The Best of Edith Piaf</album>
+      <duration></duration>
+    </track>
+  <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track19.mp3</location>
+      <title>Crumb by Crumb</title>
+      <creator>Rufus Wainwright</creator>
+      <album>Want Two</album>
+      <duration></duration>
+    </track>
+ <track>
+      <location>http://www.experimentalphilosophy.org/Tracks/Track20.mp3</location>
+      <title>Satisfied Mind</title>
+      <creator>Johnny Cash</creator>
+      <album>American VI: Ain't No Grave</album>
+      <duration></duration>
+    </track>
+  </trackList>
+</playlist>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Experimental Philosophy Page</title>
+<meta name="keywords" content="free css templates, xhtml, css, templates" />
+<meta name="description" content="A two-column, dark-themed design suitable for personal websites and blogs use. Designed by Enjay for The Web Hub." />
+<meta name="robots" content="all" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+
+</head>
+<body>
+<!-- begin wrap -->
+<div id="wrap">
+	<!-- begin header -->
+	<div id="header">
+		<h1><a href="#">Experimental Philosophy</a></h1>
+	  <ul>
+			<li><a href="http://experimentalphilosophy.typepad.com/experimental_philosophy/">Blog</a></li>
+			<li><a href="#">Social Media</a></li>
+			<li><a href="http://www.yale.edu/cogsci/XM/Home.html">Studies</a></li>
+            <li><a href="#">Contact</a></li>
+		</ul>
+  </div>
+	<!-- end header -->
+	<!-- begin page -->
+	<div id="page"><!-- begin content -->
+<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">About Experimental Philosophy</a></h2>
+			  <div class="entry">
+				<p>	 Experimental philosophy, called x-phi for short, is a new philosophical movement that supplements the traditional tools of analytic philosophy with the scientific methods of cognitive science. So experimental philosophers actually go out and run systematic experiments aimed at understanding how people ordinarily think about the issues at the foundations of the philosophical discussions.    </p>
+			    <p>If you are you looking for a brief overview of experimental philosophy, you could try reading the New York Times Article.				</p>
+			  </div>
+				
+			</div>
+			<div class="post">
+				<h2 class="title"><a href="#">X-phi social media</a></h2>
+				<div class="entry">
+				
+					 <div align="center">You can find us on...&nbsp;<a href="http://www.facebook.com/pages/Experimental-Philosophy-X-Phi/119719687891"><img src="images/facebook_logo.png" width="58" height="59" alt="Facebook" longdesc="http://www.facebook.com/pages/Experimental-Philosophy-X-Phi/119719687891?ref=search" /></a>&nbsp; and &nbsp;   <a href="http://twitter.com/xphilosopher">  <img src="images/twitter_logo.png" width="63" height="63" alt="Twitter" longdesc="http://twitter.com/xphilosopher" /></a> &nbsp;   and <a href="http://www.youtube.com/user/xphilosophy"><img src="images/youtube_icon.png" width="65" height="67" alt="YouTube" /></a> and <a href="https://plus.google.com/106694220497786919487/"><img src="Images/Google.png" width="65" height="67" alt="Facebook" longdesc="https://plus.google.com/106694220497786919487/" /></a></div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<!-- end content -->
+		<!-- begin sidebar -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Papers by topic</h2>
+					<ul id="sidebarmenu1">
+						<li><a href="Experimental%20Philosophy-Free%20Will.html">X-Phi of Action</a></li>
+						<li><a href="Experimental%20Philosophy-Reference.html">X-Phi of Language</a></li>
+						<li><a href="Experimental%20Philosophy-Consciousness.html">X-Phi of Mind</a></li>
+						<li><a href="Experimental%20Philosophy-Folk%20Morality.html">X-Phi of Ethics</a></li>
+						<li><a href="Experimental%20Philosophy-Contextualism%20Invariantism.html">X-Phi of Epistemology</a></li>
+						<li><a href="Experimental%20Philosophy-Causation.html">X-Phi of Metaphysics</a></li>
+						<li><a href="Experimental%20Philosophy-Critiques.html">Foundations of X-Phi</a></li>
+						<li><a href="Experimental%20Philosophy-Misc.html">Misc. X-Phi</a></li>
+					</ul>
+				</li>
+                <p style="text-align: right;">&mdash; <cite><a href="philpapers.org/">Powered by PhilPapers...</a></cite></p>
+				<li>
+					<h2>other X-phi resources</h2>
+					<div class="pad">
+						<ul>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Labs and Organizations</a></li>
+					</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- end sidebar -->
+	</div>
+	<!-- end page -->
+	<!-- begin footer -->
+	<div id="footer">
+		<!-- All we ask of you is to keep this credits intact. We hope you don't mind :) -->
+		<p class="legal"><a href="http://www.thewebhub.com/2008/11/lightspeed/">Thanks to LightSpeed for the CSS</a></p>
+	</div>
+	<!-- end footer -->
+</div>
+<!-- end wrap -->
+</body>
+</html>

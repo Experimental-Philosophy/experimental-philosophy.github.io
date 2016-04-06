@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Experimental Philosophy-Reference</title>
+
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #6F7D94;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+
+
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background: #93A5C4;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background: #8090AB;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #6F7D94;
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #6F7D94;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.xpapers_abstract { font-size:smaller; padding:4px }
+.xpapers_title { font-weight:bold; font-size:larger;}
+.xpapers_pubInfo { color : #15317E }
+
+
+/******** this was taken from http://www.dynamicdrive.com/style/csslibrary/item/nested_side_bar_menu/ to create the pop-out menu on the side-bar. ***********/
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 14%; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+position: fixed;
+  float: left;
+  
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background-color: #6F7D94; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+background-color: black;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(/Images/right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+</style>
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="http://pantheon.yale.edu/~jk762/ExperimentalPhilosophy.html"><img src="Images/images (1).jpeg" alt="Insert Logo Here" name="Insert_logo" width="276" height="148" id="Insert_logo" style="background: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+    <div class="sidebarmenu">
+<ul id="sidebarmenu1">
+  <li><a href="#">X-Phi of Action</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Free%20Will.html">Free Will</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Intentional%20Action.html">Intentional Action</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Action%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Language</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Reference.html">Reference</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Language%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Mind</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Consciousness.html">Consciousness</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Mind%20Misc.html">Misc.</a></li>
+  </ul>
+</li>
+<li><a href="#">X-Phi of Ethics</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Folk%20Morality.html">Folk Morality</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Ethics%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Epistemology</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Contextualism%20Invariantism.html">Contextualism and Invariantism</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Epistemology%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">X-Phi of Metaphysics</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Causation.html">Causation</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Metaphysics%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">Foundations of X-Phi</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Critiques.html">Critiques of X-Phi</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Foundations%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">Misc. X-Phi</a></a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Cross%20Cultural.html">Cross Cultural Research</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Misc.html">Misc.</a>
+  </li>
+</ul></li>
+<li><a
+  href="#">Other</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Social%20Media.html">Social Media</a>
+  <ul>
+  <li><a href="https://plus.google.com/106694220497786919487/">Google+</a><li>
+  <li><a href="https://www.facebook.com/pages/Experimental-Philosophy-X-Phi/119719687891">Facebook</a></li>
+  <li><a href="http://twitter.com/xphilosopher">Twitter</a></li>
+  <li><a href="http://www.youtube.com/user/xphilosophy">YouTube</a></li>
+  </ul></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Organizations.html">Labs
+  and Organizations</a></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Press.html">Press</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Books.html">Books</a></li>
+   <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Secrets.html">?</a>
+  </ul></li>
+<p></p>Know of a paper that should be here but isn't? Try adding it to the xphi of  <a href ="http://philpapers.org/browse/experimental-philosophy-reference"><b>reference</b></a> <br /> category on <a href="http://philpapers.org/">PhilPapers</a></p></ul>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1>Books</h1>
+   <div id="xpapers_gadget"></div>
+<h3>Edited Volumes</span></h3>
+  <p><a href="http://www.amazon.com/Experimental-Philosophy-Joshua-Knobe/dp/0195323262" class="external text" title="http://www.amazon.com/Experimental-Philosophy-Joshua-Knobe/dp/0195323262" rel="nofollow">Experimental Philosophy</a>. Eds. Joshua Knobe and Shaun Nichols. (Oxford University Press, 2008).
+  </p><h4> <span class="mw-headline">Reviews</span></h4>
+  <ul><li><a href="http://web.mit.edu/philos/www/holton.html" class="external text" title="http://web.mit.edu/philos/www/holton.html" rel="nofollow">Richard Holton</a> (2009). <a href="http://web.mit.edu/holton/www/pubs/XPhil.pdf" class="external text" title="http://web.mit.edu/holton/www/pubs/XPhil.pdf" rel="nofollow">Review of Experimental Philosophy, ed. Joshua Knobe and Shaun Nichols</a> <i>Times Literary Supplement</i>. 13 February 2009</li></ul><ul>
+    <li>Neil Levy, (2008), <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&amp;id=4409" class="external text" title="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&amp;id=4409" rel="nofollow">Review of 'Experimental Philosophy'.</a> <i>Metapsychology Reviews Online</i> 12 (33).
+    </li></ul>
+ 
+  <ul><li>Frank Jackson (2008). <a href="http://ndpr.nd.edu/review.cfm?id=14828" class="external text" title="http://ndpr.nd.edu/review.cfm?id=14828" rel="nofollow">Review of Knobe &amp; Shaun Nichols (Eds.), Experimental Philosophy.</a> <i>Notre Dame Philosophical Reviews</i> 2008 (12).
+  </li></ul>
+  <ul>
+    <li><a href="http://www.joshdmay.com/" class="external text" title="http://www.joshdmay.com/" rel="nofollow">Joshua May</a> (2010). <a href="http://www.joshdmay.com/wp-content/media/xphi-review.pdf" class="external text" title="http://www.joshdmay.com/wp-content/media/xphi-review.pdf" rel="nofollow">Review of Experimental Philosopy Ed. By Knobe and Nichols.</a> <i>Philosophical Psychology.</i> Vol. 23, No. 5, pp. 711-715..
+  </li></ul>
+  <h3>Introductions to X-Phi</h3>
+  <p><a href="http://www.amazon.com/Experimental-Philosophy-Joshua-Knobe/dp/0195323262" class="external text" title="http://www.amazon.com/Experimental-Philosophy-Introduction-Joshua-Alexander/dp/0745649181" rel="nofollow">Experimental Philosophy: An Introduction.</a> Joshua Alexander. (Polity, 2012).
+  </p>
+
+  <h3> <span class="mw-headline">X-Phi Related Books</span></h3>
+  <p>Kwame Anthony Appiah (2008). <i><a href="http://www.amazon.com/exec/obidos/ASIN/0674026098/experimentalp-20" class="external text" title="http://www.amazon.com/exec/obidos/ASIN/0674026098/experimentalp-20" rel="nofollow">Experiments in Ethics</a></i> (Mary Flexner Lecture Series of Bryn Mawr College), Harvard University Press.
+  </p>
+  <dl><dd><b>Reviews:</b>
+  <ul><li> Doris, J.M &amp; Prinz, J.J. (2009). <a href="http://ndpr.nd.edu/review.cfm?id=17705" class="external text" title="http://ndpr.nd.edu/review.cfm?id=17705" rel="nofollow">Review of <i>Experiments in Ethics</i></a>. <i>Notre Dame Philosophical Reviews</i>.
+  </li><li> Bloom, Paul (2008). <a href="http://www.nytimes.com/2008/02/03/books/review/Bloom-t.html" class="external text" title="http://www.nytimes.com/2008/02/03/books/review/Bloom-t.html" rel="nofollow">Morality Studies - Review of <i>Experiments in Ethics</i></a>. <i>The New York Times</i>.
+  </li><li> Lovett, B. J. (2008). <a href="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&amp;id=4259" class="external text" title="http://metapsychology.mentalhelp.net/poc/view_doc.php?type=book&amp;id=4259" rel="nofollow">Review - <i>Experiments in Ethics</i></a>. <i>Metapsychology</i> Volume 12, Issue 22.
+  </li></ul>
+  </dd></dl>
+  <p><a href="http://sites.google.com/site/joshuamglasgow/Home" class="external text" title="http://sites.google.com/site/joshuamglasgow/Home" rel="nofollow">Joshua Glasgow</a>, (2009) <i><a href="http://www.amazon.com/Theory-Race-Joshua-Glasgow/dp/0415990734" class="external text" title="http://www.amazon.com/Theory-Race-Joshua-Glasgow/dp/0415990734" rel="nofollow">A Theory of Race</a></i>, Routledge.
+  </p><p><a href="http://dingo.sbs.arizona.edu/~snichols/" class="external text" title="http://dingo.sbs.arizona.edu/~snichols/" rel="nofollow">Shaun Nichols</a>. (2007). <i><a href="http://www.amazon.com/Sentimental-Rules-Natural-Foundations-Judgment/dp/0195314204/ref=cm_lmf_tit_3" class="external text" title="http://www.amazon.com/Sentimental-Rules-Natural-Foundations-Judgment/dp/0195314204/ref=cm_lmf_tit_3" rel="nofollow">Sentimental Rules: On the Natural Foundations of Moral Judgment</a></i>. Oxford University Press.
+  </p><p>Sinnott-Armstrong, Walter (2007). <i><a href="http://www.amazon.com/exec/obidos/ASIN/0262693542/experimentalp-20" class="external text" title="http://www.amazon.com/exec/obidos/ASIN/0262693542/experimentalp-20" rel="nofollow">Moral Psychology, Volume 1: The Evolution of Morality: Adaptations and Innateness</a></i> (Bradford Books), MIT Press.
+  </p><p>Sinnott-Armstrong, Walter (2007). <i><a href="http://www.amazon.com/exec/obidos/ASIN/0262693577/experimentalp-20" class="external text" title="http://www.amazon.com/exec/obidos/ASIN/0262693577/experimentalp-20" rel="nofollow">Moral Psychology, Volume 2: The Cognitive Science of Morality: Intuition and Diversity</a></i> (Bradford Books), MIT Press.
+  </p><p>Sinnott-Armstrong, Walter (2007). <i><a href="http://www.amazon.com/exec/obidos/ASIN/0262693550/experimentalp-20" class="external text" title="http://www.amazon.com/exec/obidos/ASIN/0262693550/experimentalp-20" rel="nofollow">Moral Psychology, Volume 3: The Neuroscience of Morality: Emotion, Brain Disorders, and Development</a></i> (Bradford Books), MIT Press.
+  </p><p>(See also the <a href="http://www.amazon.com/Experimental-Philosophy-Reading-List/lm/R1SL5HGJ02X62S" class="external text" title="http://www.amazon.com/Experimental-Philosophy-Reading-List/lm/R1SL5HGJ02X62S" rel="nofollow">Amazon reading list</a> and the <a href="http://www.amazon.com/gp/richpub/syltguides/fullview/R2XBTGHJW6DLSE/ref=cm_syt_dtpa_f_1_rdssss1?pf_rd_p=253457301&amp;pf_rd_s=sylt-center&amp;pf_rd_t=201&amp;pf_rd_i=0195323262&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_r=0Y1X8WM86AHJGRV10ZTZ" class="external text" title="http://www.amazon.com/gp/richpub/syltguides/fullview/R2XBTGHJW6DLSE/ref=cm_syt_dtpa_f_1_rdssss1?pf_rd_p=253457301&amp;pf_rd_s=sylt-center&amp;pf_rd_t=201&amp;pf_rd_i=0195323262&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_r=0Y1X8WM86AHJGRV10ZTZ" rel="nofollow">Amazon Guide to Experimental Philosophy</a>.)
+  </p></div>
+  <div class="footer">
+    <p>If you have questions or concerns about this site, please get in touch with <a href="http://pantheon.yale.edu/~jp677/Jonathan_Phillips.html">Jonathan Phillips</a></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

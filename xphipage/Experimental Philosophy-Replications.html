@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="./pagestyle.css" media="screen" />
+
+<title>Experimental Philosophy-Replications</title>
+
+<script type="text/javascript">
+function reveal(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+} else {
+e.style.display="none"
+}
+return true;
+}
+</script>
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="http://pantheon.yale.edu/~jk762/ExperimentalPhilosophy.html"><img src="Images/images (1).jpeg" alt="Insert Logo Here" name="Insert_logo" width="276" height="148" id="Insert_logo" style="background: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+    <div class="sidebarmenu">
+<ul id="sidebarmenu1">
+  <li><a href="#">X-Phi of Action</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Free%20Will.html">Free Will</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Intentional%20Action.html">Intentional Action</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Action%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Language</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Reference.html">Reference</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Language%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Mind</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Consciousness.html">Consciousness</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Mind%20Misc.html">Misc.</a></li>
+  </ul>
+</li>
+<li><a href="#">X-Phi of Ethics</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Folk%20Morality.html">Folk Morality</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Ethics%20Misc.html">Misc.</a></li>
+  </ul>
+<li><a href="#">X-Phi of Epistemology</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Contextualism%20Invariantism.html">Contextualism and Invariantism</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Epistemology%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">X-Phi of Metaphysics</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Causation.html">Causation</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Metaphysics%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">Foundations of X-Phi</a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Critiques.html">Critiques of X-Phi</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Foundations%20Misc.html">Misc.</a>
+  </li>
+</ul>
+</li>
+<li><a href="#">Misc. X-Phi</a></a>
+  <ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Cross%20Cultural.html">Cross Cultural Research</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Misc.html">Misc.</a>
+  </li>
+</ul></li>
+<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Replications.html">X-Phi Replications</a>
+                        </li>
+<li><a
+  href="#">Other</a>
+<ul>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Social%20Media.html">Social Media</a>
+  <ul>
+  <li><a href="https://plus.google.com/106694220497786919487/">Google+</a><li>
+  <li><a href="https://www.facebook.com/pages/Experimental-Philosophy-X-Phi/119719687891">Facebook</a></li>
+  <li><a href="http://twitter.com/xphilosopher">Twitter</a></li>
+  <li><a href="http://www.youtube.com/user/xphilosophy">YouTube</a></li>
+  </ul></li>
+  <li><a
+  href="http://philwiki.net/x-phi/index.php/Main_Page">Grad Programs</a></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Press.html">Press</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Books.html">Books</a></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Organizations.html">Labs
+  and Organizations</a></li>
+  <li><a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Secrets.html">?</a>
+  </ul></li>
+<p></p>Know of an replication that should be here but isn't? Send it to <a
+  href="http://pantheon.yale.edu/~jk762/xphipage/Contact.html">Christian Mott</a> with the topic
+  "Experimental Philosophy Replication."</p></ul>
+  <!-- end .sidebar1 --></div>
+  <div class="content" >
+    <h1>Replications in Experimental Philosophy</h1>
+
+<div style="font-size:14px">
+Replications are listed in order by the first author of the paper being replicated. Unless otherwise noted, ratings are based on a scale from 1 to 7. In some cases the data presented below does not appear in that exact form in the original paper.
+<br><br>
+Much of the research in experimental philosophy -- as in every science -- has built on previous work by replicating and extending earlier results. 
+However, these replications have often been buried inside footnotes or more complicated experiments. This website aims to collect and organize these results, and to serve as a resource to researchers in the field.
+<br><br>
+The more information this website contains, the more useful it will be, so please send in any data you are willing to share. 
+Some of the studies below are labelled 'Non-Replication' or 'Non-Replication with modified material.' 
+The point of these labels is not to pass judgment on whether the effect is real -- obviously, even real effects sometimes fail to replicate.
+Rather, we hope that these labels will make it easier to use this site to see the state of the research in various areas.
+<br><br>
+Please write to <a href="http://pantheon.yale.edu/~jk762/xphipage/Contact.html">Christian Mott</a> if you know of a replication that should be included on this page, if you would like to suggest corrections to the information already available here, or if you have suggestions about how to improve the site. Unpublished data are welcome.
+<br><br>
+ <ol>
+ 
+ <li>
+ 	<strong>Beebe, J.R. &  Buckwalter, W. (2010). <a href="http://philpapers.org/rec/BEETES">The Epistemic Side-Effect Effect</a>. <i>Mind and Language</i> 25, 474-498.</strong>
+ 	<br>Mean ratings: harm condition = 2.25; help condition = 0.91 (on a -3 to 3 scale) (N = 749).
+ 	<br>
+ 	<ul>
+ 	<br><li>Beebe, J.R. & Jensen, M. (2012). <a href="http://www.acsu.buffalo.edu/~jbeebe2/Beebe%20Jensen%20Surprising%20Connections.pdf">Surprising connections between knowledge and action: The robustness of the epistemic side-effect effect</a>. <i>Philosophical Psychology</i> 25, 689-715.
+ 	<ul>Experiment 1: Mean ratings: harm condition = 6.37; help condition = 3.35 (N = 98).</ul>
+ 	</li>
+ 	<br><li>Turri, J. <a href="http://john.turri.org/research/ESEE.pdf">The Problem of ESEE Knowledge</a>. Unpublished ms.
+ 	<ul>Mean ratings: harm condition = 4.76; help condition = 3.77 (N = ~49).</ul>
+ 	</li>
+ 	
+ 	</ul>
+ </li>
+<br>
+ <li>
+   <strong>Buckwalter, W. (2010). <a href="">Knowledge Isn't Closed on
+   Saturday: A Study in Ordinary Language</a>. <i>Review of Philosophy
+   and Psychology</i>, 1, 395-406.</strong><br>
+   74.3% of participants ascribed knowledge in the case with low
+   stakes and no salient alternative; 68.5% ascribed
+   knowledge in the high stakes case (N = 544); 66.1% ascribed knowledge in the salient alternative case.<br>
+   <ul>
+   <br><li>Feltz, A. & Zarpentine, C. (2010). <a href="">Do You Know
+   More When It Matters Less?</a> <i>Philosophical Psychology</i>, 23,
+   683-706.
+  <ul>Mean ratings: low stakes = 3.68; high stakes = 4.26 (N = 152) (Performed independently and not intended as a replication)</ul>
+  </li>
+  <br><li>May, J., Sinnott-Armstrong, W., Hull, J. G. & Zimmerman,
+   A. (2010). <a href="">Practical Interests, Relevant Alternatives,
+   and Knowledge Attributions: An Empirical Study</a>. <i>Review of
+   Philosophy and Psychology</i>, 1, 265-273.
+  <ul>Mean ratings: low stakes/no alternative = 5.33; low stakes/alternative = 5.30; high stakes/no alternative = 5.07; high
+   stakes/alternative = 4.60 (N = 241) (Performed independently and not intended as a replication)</ul>
+  </li>
+  <br><li>Buckwalter, W. (forthcoming). <a href="">The Mystery of
+   Stakes and Error in Ascriber Intuitions</a>. In James Beebe (ed.),
+   <i>Advances in Experimental Epistemology</i>. Continuum.
+  <ul>Mean ratings: low stakes/no alternative = 4.70; high stakes/no alternative = 4.48; low stakes/alternative = 4.05; high stakes/alternative = 4.33.(N = ~107).</ul>
+   </li>
+  </ul>
+</li>
+<br>
+<li>
+	<strong>Buckwalter, W. (forthcoming). <a href="http://wfs.gc.cuny.edu/JBuckwalter/Buckwalter-GESEE.pdf">Gettier Made ESEE</a>. <i>Philosophical Psychology</i>.</strong>
+	<!--<br><i>Experiment 1</i>
+	<br>Mean ratings: harm condition = 4.86; help condition = 3.03 (N = 86).-->
+	<br><i>Experiment 2</i>
+	<br>Mean ratings: harm condition = 6.05; help condition = 4.11 (N = 78).
+	<!--<br><i>Experiment 3</i>
+	<br>Mean ratings: harm condition = 4.98; help condition = 3.95 (N = 85).-->
+	<ul>
+	<br><li>Beebe, J.R. & Shea, J. <a href="http://experimentalphilosophy.typepad.com/files/beebe-shea-gettierized-knobe-effects.pdf">Gettierized Knobe Effects</a>. Unpublished ms.
+	<ul>Experiment 1: WATER case: Mean ratings: harm condition = 4.35; help condition = 3.43 (N = ~94) (Study completed independently and not intended as a replication).</ul>
+	</li>
+	<br><li>Turri, J. <a href="http://john.turri.org/research/ESEE.pdf">The Problem of ESEE Knowledge</a>. Unpublished ms.
+	<ul>Mean ratings: harm condition = 4.24; help condition= 3.74 (N = ~49).</ul>
+	</li>
+	</ul>
+</li>
+<br>
+ <li>
+ 	<strong>Buckwalter, W. & Stich, S. (2013). <a href=http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1683066>Gender and Philosophical Intuition</a>, in <i>Experimental Philosophy: Volume 2</i>, J. Knobe & S. Nichols, eds., Oxford University Press.</strong>
+ 	<br><i>Watch Gettier Case</i>, (Sec. 3.1)
+	<br>71% of women (N = 56) attributed knowledge; 41% of men (N = 84)attributed knowledge. (Data from Starmans & Friedman, unpublished ms.)
+	<ul>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+ 	<ul><b>[Non-Replication]</b> 57.1% of women (N = 84) attributed knowledge; 44.2% of men (N = 52) attributed knowledge.</ul>
+	</li>
+	</ul>
+	<br><i>Compatibilism Question</i>, (Sec. 3.2)
+	<br>63% of women (N = 90) attributed free will; 35% of men (N = 102) attributed free will. (Data from Holtzman, in preparation)
+	<ul>
+	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul><b>[Non-Replication]</b> SurveyMonkey sample: 45% of women attributed free will (N = 50); 35% of men attributed free will (N = 42).</ul>
+	</li>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> 35.7% of women (N = 84) attributed free will; 34.6% of men (N = 52) attributed free will.</ul>
+	</li>
+	</ul>
+	<br><i>Physicalism Question</i>, (Sec. 3.2)
+	<br>17% of women said he could know what an apple tastes like (N = 93); 39% of men said he could know what an apple tastes like (N = 102).
+	<ul>
+	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul><b>[Non-Replication]</b> SurveyMonkey sample: ~8% of women said he could know what an apple tastes like (N = 52); ~11% of men said he could know what an apple tastes like (N = 49). (Exact percentages not reported; numbers read off figure.)</ul>
+	</li>
+	</ul>
+	<br><i>Dualism Question</i>, (Sec. 3.2)
+	<br>62% of women (N = 87) attributed love to a robot; 79% of men (N = 98) attributed love to a robot. (Data from Holtzman, in preparation)
+	<ul>
+	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul><b>[Non-Replication]</b> SurveyMonkey sample: ~38% of women attributed love to a robot (N = 72); ~40% of men attributed love to a robot (N = 65). (Exact percentages not reported; numbers read off figure.)</ul>
+	</li>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> 51.7% of women (N = 87) attributed love to a robot; 47.9% of men (N = 71) attributed love to a robot.</ul>
+	</li>
+	</ul>
+	<br><i>Violinist Case</i>, (Sec. 3.3)
+	<br>Women’s mean response was 3.86 (N = 122); men’s mean response was 4.32 (N = 176). (Data from Cushman & Young)
+	<ul>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 3.99 (N = 84); men’s mean response was 4.01 (N = 52).</ul>
+	</li>
+	</ul>
+	<br><i>Magistrate and the Mob Case</i>
+	<br>Women’s mean response was 4.15 (N = 149); men’s mean response was 4.4 (N = 380). (Converted to 1 to 5 scale.) (Data from Cushman & Young)
+	<ul>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 4.13 (N = 87); men’s mean response was 4.18 (N = 71). (1 to 5 scale.) </ul>
+	</li>
+	</ul>
+	<br><i>Trolley Case</i>, (Sec. 3.4)
+	<br>Women’s mean response was 4.21; men’s mean response was 4.95. (N not reported.) (Data from Zamzow & Nichols, 2009)
+	<ul>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 5.97 (N = 84); men’s mean response was 5.67 (N = 52).</ul>
+	</li>
+	</ul>
+	<br><i>Causal Deviance Cases</i>, (Sec. 3.5)
+	<br>Mean scores: <i>For women</i>: Negative Deviant = 2.67, Negative Normal = 3.17; Positive Normal = 2.93, Positive Deviant = 3.10. 
+	<br><i>For men</i>: Negative Deviant = 2.58, Negative Normal = 2.86; Positive Normal = 2.94, Positive Deviant = 2.39. (N not reported.) (Data from Pizarro, Uhlmann & Bloom)
+	<ul>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul>Mean scores: <i>For women</i>: Negative Deviant = 1.77 (N = 84), Negative Normal = 2.02 (N = 87), Positive Normal = 2.77 (N = 84), Positive Deviant = 3.09 (N = 87). 
+	<br><i>For men</i>: Negative Deviant = 1.65 (N = 52), Negative Normal = 1.60 (N = 71), Positive Normal = 2.56 (N = 52), Positive Deviant = 3.03 (N = 71).</ul>
+	</li>
+	</ul>
+	<br><i>Brain in a Vat Case</i>, (Sec. 3.7)
+	<br>Women’s mean response was 6.72 (N = 39); men’s mean response was 5.62 (N = 24).
+	<ul>
+	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul>Mturk sample: women’s mean response was 5.86 (N = 58); men’s mean response was 5.25 (N = 56).
+	<br><b>[Non-Replication]</b> SurveyMonkey sample: women’s mean response was 5.61 (N = 49); men’s mean response was 5.78 (N = 51).</ul>
+	</li>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 5.22 (N = 87); men’s mean response was 4.17 (N = 71).</ul>
+	</li>
+	</ul>
+	<br><i>Twin Earth Case</i>, (Sec. 3.7)
+	<br>Women’s mean response was 4.49 (N = 49); men’s mean response was 5.63 (N = 35).
+	<ul>
+	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul><b>[Non-Replication]</b> Mturk sample: women’s mean response was 5.46 (N = 52); men’s mean response was 5.22 (N = 65).
+	<br>SurveyMonkey sample: women’s mean response was 5.22 (N = 45); men’s mean response was 5.88 (N = 40).</ul>
+	</li>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 5.31 (N = 84); men’s mean response was 5.04 (N = 52).</ul>
+	</li>
+	</ul>
+	<br><i>Chinese Room Case</i>, (Sec. 3.7)
+	<br>Women’s mean response was 3.25 (N = 73); men’s mean response was 4.13 (N = 54).
+	<ul>
+	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul><b>[Non-Replication]</b> Mturk sample: women’s mean response was 3.31 (N = 55); men’s mean response was 3.31 (N = 48).
+	<br><b>[Non-Replication]</b> SurveyMonkey sample: women’s mean response was 3.82 (N = 45); men’s mean response was 3.66 (N = 35).</ul>
+	</li>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 3.98 (N = 87); men’s mean response was 3.54 (N = 71).</ul>
+	</li>
+	</ul>
+	<br><i>Plank of Carneades Case</i>, (Sec. 3.7)
+	<br>Women’s mean response was 5.64 (N = 73); men’s mean response was 4.95 (N = 37).
+ 	<ul>
+ 	<br><li>Seyedsayamdost, Hamid. (2012) <a href=http://philpapers.org/rec/SEYOGA-2>On Gender and Philosophical Intuition: Failure of Replication and Other Negative Results</a>. Unpublished ms.
+ 	<ul>Mturk Sample: women’s mean response was 5.51 (N = 86); men’s mean response was 5.20 (N = 70).
+	<br><b>[Non-Replication]</b> SurveyMonkey Sample: women’s mean response was 5.62 (N = 50); men’s mean response was 5.85 (N = 48).</ul>
+	</li>
+	<br><li>Adleberg, T., Thompson, M. & Nahmias, E. (forthcoming). <a href=http://philpapers.org/rec/ADLDMA>Do Men and Women Have Different Philosophical Intuitions? Further Data</a>. <i>Philosophical Psychology</i>.
+	<ul><b>[Non-Replication]</b> Women’s mean response was 4.94 (N = 87); men’s mean response was 4.89 (N = 71).</ul>
+	</li>
+ 	</ul>
+ </li>
+ <br>
+<li>
+ 	<strong>Cola&ccedil;o, D., Buckwalter, W., Stich, S., & Machery, E. (2014). <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9252572&fulltextType=RA&fileId=S1742360014000070">Epistemic intuitions in fake-barn thought experiments</a>. <i>Episteme</i>, 11, 199-212.</strong>
+
+
+<br><br><i>Overall mean ratings</i>
+<br>Mean rating in high defeater fake barn case: 4.51 (N = approximately 59 in high defeater fake barn condition)
+<br>
+<ul>
+<br><li>Turri, J. (2014). <a href="http://philosophycommons.typepad.com/xphi/2014/06/more-on-fake-barn-intuitions-replications-of-colaco-et-al.html">Unpublished data</a>. 
+<br><ul>Mean rating: 4.92 (N = 300)</ul></li>
+<br>
+<li>Knobe, J. (2014). <a href="http://philosophycommons.typepad.com/xphi/2014/06/more-on-fake-barn-intuitions-replications-of-colaco-et-al.html">Unpublished data</a>.
+
+<br><ul>Mean rating: 4.66 (N = 203)</ul></li></ul>
+
+<i>
+Age effect</i>
+<br>Age predicted knowledge ratings in fake barn conditions, &#946; = −0.32 (N = approximately 117 in fake barn conditions)
+
+<ul>
+<li>Turri, J. (2014). <a href="http://philosophycommons.typepad.com/xphi/2014/06/more-on-fake-barn-intuitions-replications-of-colaco-et-al.html">Unpublished data</a>.
+<br><strong><ul>[Non-replication]</strong> Age did not predict knowledge ratings,  &#946; = -.085 (N = 300) (Replication study conducted on Mechanical Turk)</ul></li>
+<br>
+<li>Knobe, J. (2014). <a href="http://philosophycommons.typepad.com/xphi/2014/06/more-on-fake-barn-intuitions-replications-of-colaco-et-al.html">Unpublished data</a>.
+<br><strong><ul>[Non-replication]</strong> Age did not predict knowledge ratings,  &#946; = .11 (N = 203)
+(Replication study conducted on Mechanical Turk)</ul></li></ul>
+ <br><li>
+   <strong>Feltz, A. & Cokely, E. (2007). <a href="http://faculty.schreiner.edu/adfeltz/Papers/ma233-Feltz.pdf">An Anomaly in
+    Intentional Action Ascription: More Evidence of Folk
+    Diversity</a>. In Proceedings of the 29th Annual Cognitive Science
+    Society.</strong><br>
+    Ratings are higher for descriptions of bad
+side effects that are presented before good side
+effects. The order effect was only significant for
+women (N = 67).<br>
+   <ul>
+   <br><li>Cokely, E. & Feltz, A. (2008). <a href="http://faculty.schreiner.edu/adfeltz/Papers/Knobe%20Extraversion.pdf">Individual
+    Differences, Judgment Biases, and Theory-of-Mind: Deconstructing
+    the Intentional Action Side Effect Asymmetry</a>. <i>Journal of
+    Research in Personality</i> 43:18-24. <ul>Mean ratings: When Help was presented
+    ﬁrst, Help = 2; Harm = 4.2. When Help was presented second Help =
+   2; Harm = 5.8 (N = 95). An identiﬁable
+    sub-group, namely women, were primarily responsible for the order
+    effect.</ul></li></ul>
+</li>
+<br>
+ <li>
+   <strong>Feltz, A. & Zarpentine, C. (2010). <a href="">Do You Know
+   More When It Matters Less?</a> <i>Philosophical Psychology</i>, 23,
+   683-706.</strong><br>
+   Mean ratings: low stakes = 3.68; high stakes = 4.26 (N = 152)<br>
+<ul><br>
+    <li>Buckwalter, W. (2010). <a href="">Knowledge Isn't Closed on
+   Saturday: A Study in Ordinary Language</a>. <i>Review of Philosophy
+   and Psychology</i>, 1, 395-406.
+  <ul>74.3% of participants ascribed knowledge in the case with low
+   stakes and no salient alternative; 68.5% ascribed
+   knowledge in the high stakes case (N = 544); 66.1% ascribed knowledge in the salient alternative case. (Performed independently and not intended as a replication).</ul>
+  </li>
+    <br><li>May, J., Sinnott-Armstrong, W., Hull, J. G. & Zimmerman,
+   A. (2010). <a href="">Practical Interests, Relevant Alternatives,
+   and Knowledge Attributions: An Empirical Study</a>. <i>Review of
+   Philosophy and Psychology</i>, 1, 265-273.
+  <ul>Mean ratings: low stakes/no alternative = 5.33; low stakes/alternative = 5.30; high stakes/no alternative = 5.07; high
+   stakes/alternative = 4.60 (N = 241) (Performed independently and not intended as a replication)</ul>
+  </li>
+  <br><li>Buckwalter, W. (forthcoming). <a href="">The Mystery of
+   Stakes and Error in Ascriber Intuitions</a>. In James Beebe (ed.),
+   <i>Advances in Experimental Epistemology</i>. Continuum.
+  <ul>Mean ratings: low stakes/no alternative = 4.70; high stakes/no alternative = 4.48; low stakes/alternative = 4.05; high stakes/alternative = 4.33.(N = ~107).</ul>
+   </li>
+  </ul>
+</li>
+<br>
+<li>
+<strong>Knobe, J. (2003). <a href="http://pantheon.yale.edu/~jk762/Side-Effect.pdf">Intentional action and side effects in ordinary language</a>. <i>Analysis</i>, 63, 190-193.</strong>
+  <br><i>Experiment 1</i>
+  <br>82% of participants in Harm condition said that the agent brought about the side-effect
+intentionally; 23% in the Help condition said that the agent brought about the side-effect intentionally (N = 78).
+  <ul>
+  <br> <li>McCann, H. J. (2005). <a href="http://pantheon.yale.edu/~jk762/responses/McCann.pdf">Intentional Action and Intending: Recent Empirical Studies</a>. <i>Philosophical Psychology</i>, 18
+  (6):737-748. <ul>63% of participants in the Harm condition say the
+  side-effect is intentional (N = ~53).</ul></li>
+  <br><li>Young, L., Cushman, F., Adolphs, R., Tranel, D. & Hauser, M. (2006). <a href="http://pantheon.yale.edu/~jk762/responses/VMPC.pdf">Does Emotion Mediate the Effect of an Action's Moral Status on its Intentional Status? Neuropsychological Evidence</a>. <i>Journal of Cognition and Culture</i> 6, 291-304.
+  <ul>Among neurotypical participants: 80.2% judged that the chairman
+    intentionally harmed the environment; 9.4% judged that the chairman intentionally
+    helped the environment (N = 936). Among participants with VMPFC
+    lesions, 100% judged that the chairman intentionally harmed the
+    environment; 29% judged that the
+chairman intentionally helped the environment.</ul></li>
+<br><li>Nichols, S. & Ulatowski, J. (2007). <a href="http://dingo.sbs.arizona.edu/~snichols/Papers/IntuitionsIndividualDiffFinal1.pdf">Intuitions and Individual Differences: The Knobe Effect Revisited</a>.  <i>Mind and Language</i> 22, 346-365.
+<ul>68.2% of participants judged that the chairman intentionally harmed the environment; 31.8% of participants judged that the chairman intentionally helped the environment (N = 44). </ul></li>
+  <br><li>Wright, J. & Bengson, J. (2009). <a href="">Asymmetries in Judgments of Responsibility and Intentional Action</a>. <i>Mind and Language</i> 24, 24-50.
+  <ul>64.8% of participants judged that the chairperson harmed the environment intentionally; 4.1% of participants judged that the chairperson helped the environment intentionally (N = 122). (Methodology differed slightly from the original study).</ul></li>
+  <br><li>Sripada, C. & Konrath, S. (2011). <a href="http://sitemaker.umich.edu/sripada/files/telling_more_than_we_can_know_about_intentional_action.pdf">Telling More Than We Can Know About Intentional Action</a>. <i>Mind and Language</i>, 26, 353-380.
+  <ul>Study replicated, but detailed findings are not reported.</ul></li>
+<br><li>Pinillos, Á., Smith, N., Nair, G. S., Mun, C. & Marchetto, P. (2011). <a href="http://philpapers.org/archive/PINPNC.1.pdf">Philosophy's New Challenge: Experiments and Intentional Action</a>. <i>Mind and Language</i>, 26, 115-139.
+<ul>Among participants who scored 0 on CRT, 79% said harm was
+    intentional, 14% said help was intentional (N = 107). <br>
+Among participants who scored greater than 1 on CRT, 65% said harm was
+    intentional, 18% said help was intentional (N = 92). (Methodology
+    differed from original study.)</ul></li>
+  <br><li>Sloman, S., Fernbach, P. & Ewing, S. (2012). <a href="https://0d201a26-a-62cb3a1a-s-sites.googlegroups.com/site/philfernbachswebpage/attachments/SlomanFernbachEwing2012.pdf?attachauth=ANoY7cpXiRXLzxxRIBxjv_mRsTM_nlXiUJXncB5E7BjKEd0hzS4clQwGDcFk1c9WTNAbY6SuKWMGHZWH0UKAZUeTMKmpR7NLm41KVR1BuS8LulSVJXZk83uliitJDF2vghEuSEUyfc2u8H-I4FO_-9lPQb1nL9dRVd7W2P39O-zgZCADcHYomd3VWLrixvfaTFO_g8UECQG8pcfNSfAp2xMnJgaiz99s-H86gR7o0WsJhj0c-WrFiIcjU5n5qnlUvadfrWIjckTg&attredirects=0">A Causal Model of Intentionality Judgment</a>.  <i>Mind and Language</i>, 27, 154-180.
+  <ul>Mean ratings: Harm = 7.6; Help = 3.0 (on 11-point scale) (N = 98) (Methodology differed from original study). </ul></li>
+  </ul>
+</li>
+<br>
+<li>
+<strong>Knobe, J. (2003). <a href ="http://pantheon.yale.edu/~jk762/IntentionSkill.pdf">Intentional action in folk psychology: An experimental
+investigation</a>. <i>Philosophical Psychology</i>, 16, 309–324.</strong>
+<br>
+<i>Experiment 1</i>
+<br> 76% of participants in the immoral/no skill condition judged killing the aunt to be intentional; 28% in the achievement/no skill condition judged hitting the bull's-eye to be intentional (N = ~40).
+<ul>
+<br><li>Guglielmo, S. & Malle, B. (2010). <a href="http://research.clps.brown.edu/sguglielmo/pubs/GM_skill.pdf">Enough Skill to Kill: Intentionality Judgments and the Moral Valence of Action</a>. <i>Cognition</i>, 117, 139-150.
+<ul>Study 1: In a condition that is identical to the
+  immoral/no-skill condition in the original paper, 93% of
+  participants said the act of killing was intentional (N = ~75).</ul>
+<ul>Study 5: 98% of participants in the low-skill negative
+  condition judged killing the aunt to be intentional (N = ~59), and
+  38% of participants in the low-skill neutral condition judged
+  hitting the bull's-eye to be intentional (N = ~59).</ul>
+</li>
+</ul>
+</li>
+<br>
+<li>
+<strong>Knobe, J. & Fraser, B. (2008). <a
+  href="http://pantheon.yale.edu/~jk762/Knobe-Fraser.pdf">Causal
+  Judgment and Moral Judgment: Two Experiments</a>. <i>Analysis</i>, In Walter Sinnott-Armstrong (ed.), <i>Moral Psychology</i>. MIT Press.</strong>
+  <br><i>Experiment 1</i>
+  <br>Mean ratings: professor caused = 2.2; administrative assistant caused = -1.2 (on a scale from -3 to 3).<br>
+  <ul>
+  <br><li>Sytsma, J., Livengood, J. & Rose, D. (forthcoming). <a
+ href="">Two types of typicality: Rethinking the role of statistical
+ typicality in ordinary causal attributions</a>. <i>Studies in History
+ and Philosophy of Science</i>.
+   <ul>Study 1: Mean ratings: professor caused = 4.41; administrative assistant caused = 2.98 (N = 51).</ul></li>
+  <br> <li>Knobe, J. & Szabo, Z. <a
+  href="http://pantheon.yale.edu/~jk762/Knobe-Szabo.pdf">Modals with a
+  taste of the deontic</a>. (forthcoming). <i>Semantics and Pragmatics</i>. <ul>
+Mean ratings: professor cause = 5.4; administrative assistant caused = 2.3 (N = 80).</ul></li>
+  </ul>
+</li>
+<br>
+<li>
+<strong>Knobe, J. & Kelly, S. D. (2009). <a href="">Can one act for a reason without acting intentionally?</a>
+In Constantine Sandis (ed.), <i>New Essays on the Explanation of
+Action</i>. Palgrave Macmillan.</strong>
+<br>Mean ratings: terrorist performed the action intentionally = -0.5; terrorist performed the action in order to save his son = 1.8 (on a scale from -3 to 3) (N = 62)
+<br>
+<ul>
+<br><li>McGuire, J. M. (2012). <a href="">Side-effect actions, acting
+  for a reason, and acting intentionally</a>. <i>Philosophical
+  Explorations</i>. 15, 317-333.
+  <ul>40% of participants said that the act terrorist performed the action intentionally.
+    <br>90.8% of participants said that terrorist performed
+    the action in
+    order to save his son. (Methodology differs from original study)</ul>
+   </li>
+   </ul>
+</li>
+<br>
+<li>
+<strong>Machery, E. (2006). <a href="http://www.pitt.edu/~machery/papers/The%20folk%20concept%20of%20intentionality_machery.pdf">The Folk Concept of Intentional Action: Philosophical and Experimental Issues</a>. <i>Mind and Language</i>, 23 (2):165–189.</strong>
+<br>95% of participants in the extra-dollar case judged the action to be intentional; 45% in the free-cup case judged the action to be intentional (N = 126).<br>
+<ul><i></i>
+<br><li>Sloman, S., Fernbach, P. & Ewing, S. (2012). <a href="https://0d201a26-a-62cb3a1a-s-sites.googlegroups.com/site/philfernbachswebpage/attachments/SlomanFernbachEwing2012.pdf?attachauth=ANoY7cpXiRXLzxxRIBxjv_mRsTM_nlXiUJXncB5E7BjKEd0hzS4clQwGDcFk1c9WTNAbY6SuKWMGHZWH0UKAZUeTMKmpR7NLm41KVR1BuS8LulSVJXZk83uliitJDF2vghEuSEUyfc2u8H-I4FO_-9lPQb1nL9dRVd7W2P39O-zgZCADcHYomd3VWLrixvfaTFO_g8UECQG8pcfNSfAp2xMnJgaiz99s-H86gR7o0WsJhj0c-WrFiIcjU5n5qnlUvadfrWIjckTg&attredirects=0">A Causal Model of Intentionality Judgment</a>.  <i>Mind and Language</i>, 27, 154-180.
+  <ul>Mean ratings: extra-dollar = 6.95; free-cup = 4.26 (on an
+    11-point scale). (N = 87) (Methodology differed from original study). </ul></li>
+</ul>
+</li>
+<br>
+<li>
+<strong>Machery, E., Mallon, R., Nichols, S. & Stich,
+  S. P. (2004). <a href="http://www.pitt.edu/~machery/papers/verson%20publiee.pdf">Semantics, Cross-Cultural Style</a>. <i>Cognition</i>, 92 (3).</strong>
+  <br>
+  <i>G&ouml;del cases</i> (Percentages for the separate cases reported in Beebe & Undercoffer, <i>infra</i>.)
+  <br>58% of Western participants (N = 31) said that 'G&ouml;del' referred to the person who claimed credit for the work; 29% of participants in Hong Kong (N = 41) said that 'G&ouml;del' referred to the person who claimed credit for the work.
+  <br>55% of Western participants (N = 31) said that 'Tsu Ch'ung Chih' referred to the person who claimed credit for the work; 32% of participants in Hong Kong (N = 41) said that 'Tsu Ch'ung Chih' referred to the person who claimed credit for the work.
+  <ul>
+  <br><li>Beebe, J. & Undercoffer, R. <a href=http://www.acsu.buffalo.edu/~jbeebe2/Beebe%20Undercoffer%20Individual%20and%20Crosscultural%20Differences%20in%20Semantic%20Intuitions.pdf>Individual and Cross-Cultrual Differences in Semantic Intuitions: New Experimental Findings</a>. Unpublished.
+  <ul>Study 1a: 56% of Western participants (N = 257) said that ‘G&ouml;del’ referred to the person who claimed credit for the work; 43% of East Asian participants (N = 149) said that ‘G&ouml;del’ referred to the person who claimed credit for the work.</ul>
+  <ul>Study 1c: 63% of Western participants (N = 257) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work; 48% of East Asian participants (N = 149) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work. (Methodology differed from the original study.)</ul>
+  <ul>Study 2a: 58% of Western participants (N = 161) said that ‘G&ouml;del’ referred to the person who claimed credit for the work; 37% of East Asian participants (N = 46) said that ‘G&ouml;del’ referred to the person who claimed credit for the work. (Methodology differed from the original study.)</ul>
+  <ul>Study 2a: 67% of Western participants (N = 161) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work; 43% of East Asian participants (N = 46) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work. (Methodology differed from the original study.)</ul>
+  </li>
+  <br><li>Lam, B. (2010). <a href = "http://faculty.vassar.edu/balam/arecantonesespeakersreallydescriptivists.pdf">Are Cantonese Speakers Really Descriptivists? Revisiting Cross-Cultural Semantics</a>. <i>Cognition</i> 115:320-32.
+  <ul><b>[Non-Replication with modified materials]</b> 87% of Cantonese speakers (N = 38) and 65% of English speakers
+  (N = 31) said 'Shakespeare' refers to the person who claimed credit
+  for the work (Methodology differed from original study).</ul></li>
+  
+  <br><li>Machery, E., Deutsch, M., Mallon, R., Nichols, S., Sytsma, J. & S. Stich. (2010). <a href=http://philpapers.org/rec/MACSIR>Semantic intuitions: Reply to Lam</a>. <i>Cognition</i>, 117, 361-366. 
+  <ul>39% of participants in Hong Kong (N = 71) reading a Chinese translation of the vignette from Machery et al. (2009) said that ‘G&ouml;del’ referred to the person who claimed credit for the work. (Methodology differed from the original study.)</ul></li>
+  
+  <br><li>Machery, E., Olivola, C.Y. & de Blanc M. (2009). <a href=http://philpapers.org/rec/MACLAM-2>Linguistic and metalinguistic intuitions in the philosophy of language</a>. <i>Analysis</i>, 69, 689-694. 
+  <ul> 58% of Indian participants (N = 83), 48% of French participants (N = 66), and 56% of Mongolian participants (N = 78) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work.</ul></li>
+  
+  <br><li>Sytsma, J. & Livengood, J. (2011). <a href = "http://philsci-archive.pitt.edu/5130/1/A_New_Perspective_Concerning_Experiments_on_Semantic_Intuitions.pdf">A
+  New Perspective Concerning Experiments on Semantic
+  Intuitions</a>.<i> Australasian Journal of Philosophy</i> 89
+  (2):315-332.
+  <ul><b>[Non-Replication]</b> 39.4% of American participants
+  said 'G&ouml;del' refers to the person who claimed credit for the work (N = 71).</ul></li>
+  </ul>
+
+  <br><i>Jonah cases</i>
+  <br> In 61% of responses,  Western participants (N = 31) said that 'Attila' or 'Chan Wai Man' referred to the real person; in 66% of responses, participants in Hong Kong (N = 41) said that 'Attila' or 'Chan Wai Man' referred to the real person.<br>
+  <ul>
+  <br><li>Beebe, J. & Undercoffer, R. <a href=http://www.acsu.buffalo.edu/~jbeebe2/Beebe%20Undercoffer%20Individual%20and%20Crosscultural%20Differences%20in%20Semantic%20Intuitions.pdf>Individual and Cross-Cultrual Differences in Semantic Intuitions: New Experimental Findings</a>. Unpublished.
+  <ul>Study 1a: 39% of Western participants (N = 257) said that 'Attila' referred to the real person; 26% of East Asian participants (N = 149) said that 'Attila' referred to the real person.</ul>
+  <ul>Study 1a: 39% of Western participants (N = 257) said that 'Chan Wai Man' referred to the real person; 25% of East Asian participants (N = 149) said that 'Chan Wai Man' referred to the real person.</ul>
+  </li>
+  </ul>
+  
+</li>
+<br>
+<li>
+<strong>Mallon, R.(2008). <a href="http://www.hum.utah.edu/philosophy/faculty/mallon/Materials/KnobevsMachery.pdf">Knobe Vs Machery: Testing the Trade-Off Hypothesis</a>. <i>Mind and Language</i>, 23, 247-255.</strong>
+<br>92% of participants judged that the terrorist killed Australians intentionally; 12% judged that the terrorist helped the orphanage intentionally (N = 52).<br>
+<ul><i></i>
+<br><li>Sloman, S., Fernbach, P. & Ewing, S. (2012). <a href="https://0d201a26-a-62cb3a1a-s-sites.googlegroups.com/site/philfernbachswebpage/attachments/SlomanFernbachEwing2012.pdf?attachauth=ANoY7cpXiRXLzxxRIBxjv_mRsTM_nlXiUJXncB5E7BjKEd0hzS4clQwGDcFk1c9WTNAbY6SuKWMGHZWH0UKAZUeTMKmpR7NLm41KVR1BuS8LulSVJXZk83uliitJDF2vghEuSEUyfc2u8H-I4FO_-9lPQb1nL9dRVd7W2P39O-zgZCADcHYomd3VWLrixvfaTFO_g8UECQG8pcfNSfAp2xMnJgaiz99s-H86gR7o0WsJhj0c-WrFiIcjU5n5qnlUvadfrWIjckTg&attredirects=0">A Causal Model of Intentionality Judgment</a>.  <i>Mind and Language</i>, 27, 154-180.
+  <ul>Mean ratings: killing Australians = 8.97; helping the orphanage
+    = 3.08 (on an 11-point scale). (N = 84) (Methodology differed from original study). </ul></li>
+</ul>
+</li>
+<br>
+<li>
+   <strong>May, J., Sinnott-Armstrong, W., Hull, J. G. & Zimmerman,
+   A. (2010). <a href="">Practical Interests, Relevant Alternatives,
+   and Knowledge Attributions: An Empirical Study</a>. <i>Review of
+   Philosophy and Psychology</i>, 1, 265-273.</strong><br>
+   Mean ratings: low stakes/no alternative = 5.33; low stakes/alternative = 5.30; high stakes/no alternative = 5.07; high
+   stakes/alternative = 4.60 (N = 241)<br>
+   <ul>
+   <br><li>Feltz, A. & Zarpentine, C. (2010). <a href="">Do You Know
+   More When It Matters Less?</a> <i>Philosophical Psychology</i>, 23,
+   683-706.
+  <ul>Mean ratings: low stakes = 3.68; high stakes = 4.26 (N = 152) (Performed independently and not intended as a replication)</ul>
+  </li>
+  <li>Buckwalter, W. (2010). <a href="">Knowledge Isn't Closed on
+   Saturday: A Study in Ordinary Language</a>. <i>Review of Philosophy
+   and Psychology</i>, 1, 395-406.
+  <ul>74.3% of participants ascribed knowledge in the case with low
+   stakes and no salient alternative; 68.5% ascribed
+   knowledge in the high stakes case (N = 544); 66.1% ascribed knowledge in the salient alternative case. (Performed independently and not intended as a replication).</ul>
+  </li>
+  <br><li>Buckwalter, W. (forthcoming). <a href="">The Mystery of
+   Stakes and Error in Ascriber Intuitions</a>. In James Beebe (ed.),
+   <i>Advances in Experimental Epistemology</i>. Continuum.
+  <ul>Mean ratings: low stakes/no alternative = 4.70; high stakes/no alternative = 4.48; low stakes/alternative = 4.05; high stakes/alternative = 4.33.(N = ~107).</ul>
+   </li>
+  </ul>
+</li>
+<br>
+<li>
+<strong>Nahmias, E., Coates, D. J. & Kvaran, T. (2007). <a href = "http://philpapers.org/rec/NAHFWM"> Free Will, Moral Responsibility, and Mechanism: Experiments on Folk Intuitions</a>. <i>Midwest Studies in Philosophy</i> 31 (1):214-242.</strong>
+	 <br>In concrete/bad Ertan psych condition, 81.1% of participants responded that the agent was morally responsible for his actions (N = 111)<br>
+	 <ul>
+	 <br><li>Feltz, A. & Cokely, E. T. (2009). <a href="http://www.sciencedirect.com/science/article/pii/S1053810008001220">Do Judgments About Freedom and Responsibility Depend on Who You Are? Personality Differences in Intuitions About Compatibilism and Incompatibilism</a>. <i>Consciousness and Cognition</i> 18 (1):342-350.
+	 <ul>In concrete/bad psych condition, 76% of participants
+	   responded that the agent was morally responsible for his
+	   actions, 22% said he was not, 2% were neutral (N = 58) (Methodology differs from original study).</ul>
+	 </li>
+	 <br><li>Nadelhoffer, T., Kvaran, T. & Nahmias, E. (2009). <a href="">Temperament and Intuition: A Commentary on Feltz and Cokely</a>. <i>Consciousness and Cognition</i> 18 (1):351-355.
+	 <ul>Detailed results not reported, but same case used.</ul></li>
+	 </ul>
+</li>
+<br>
+<li>
+<strong>Nichols, S. (2004). <a href="http://dingo.sbs.arizona.edu/~snichols/Papers/Afterobjectivity.pdf">After objectivity: An empirical study of moral judgment</a>. <i>Philosophical Psychology</i>, 17 (1).</strong>
+  <br><i>Experiment 1</i>
+  <br>42.5% of participants gave nonobjectivist responses to the moral case (N = 40).
+  <br>
+  <ul>
+  <br> <li>Feltz, A. & Cokely, E. T. (2008). <a href="http://141.14.165.6/users/cokely/Feltz_%26_Cokely_2008_ProcCS.pdf">The fragmented folk: More evidence of stable individual differences in moral judgments and folk intuitions.</a> In B.C. Love, K. McRae & V.M. Sloutsky (Eds.), <i>Proceedings of the 30th Annual Conference of the Cognitive Science Society</i> (pp. 1771-1776). Austin ,TX: Cognitive Science Society. 
+  <ul>Experiment 1: 69% of participants gave a non-objectivist answer to the moral scenario (N = 115).</ul></li>
+  </ul>
+</li>
+<br>
+<li>
+<strong>Nichols, S. & Knobe, J. (2007). <a href="http://pantheon.yale.edu/~jk762/Nichols-Knobe.pdf">Moral Responsibility and Determinism: The Cognitive Science of Folk Intuitions.</a> <i>Nous</i>, 41, 663-685. </strong>
+  <br><i>Experiment 1</i>
+  <br>In concrete condition, 72% of participants gave compatibilist responses; in abstract condition, 86% gave incompatibilist responses (N not reported).
+  <br>
+  <ul>
+  <br> <li>Nahmias, E., Coates, D. J. & Kvaran, T.(2007). <a href = "http://philpapers.org/rec/NAHFWM">Free Will, Moral Responsibility, and Mechanism: Experiments on Folk Intuitions</a> <i>Midwest Studies in Philosophy</i> 31 (1):214-242.
+  <ul>In abstract condition, 63.1% of participants (across Psych and Neuro conditions) responded that human beings in a deterministic world could be morally responsible for their actions (N = 152) (Methodology differs from original study).</ul>
+  <ul>In abstract condition, 61.6% of participants (across Psych
+    and Neuro conditions) responded that beings (Ertans) in a deterministic world could be morally responsible for their actions (N = 155) (Methodology differs from original study).</ul>
+  <ul>In the concrete-bad condition, 80.2% of participants (across Psych and Neuro conditions) responded that beings (Ertans) in a deterministic world could be morally responsible for their actions (N = 219) (Methodology differs from original study).</ul></li>
+   <br><li>Feltz, A., Cokely, E. & Nadelhoffer, T. (2009). <a
+   href="http://faculty.schreiner.edu/adfeltz/Papers/NC%20v%20NI.pdf">Natural Compatibilism Versus Natural Incompatibilism: Back
+   to the Drawing Board</a>. <i>Mind and Language</i> 24 (1):1-23.
+   <ul>Experiment 1: 67% of participants gave incompatibilist
+   answers when presented with both abstract and concrete scenarios,
+   even when concrete scenarios were presented first (N = 52)</ul></li>
+   <br><li>Cova, F., Bertoux, M., Bourgeois-Gironde, S. & Dubois,
+   B. (2012). <a href="http://philpapers.org/archive/COVJAM">Judgments
+   About Moral Responsibility and Determinism in Patients with
+   Behavioural Variant of Frontotemporal Dementia: Still
+   Compatibilists</a>. <i>Consciousness and Cognition</i> 21
+   (2):851-864.
+   <ul>Among participants with bvFTD, mean ratings on first-presented case: high-affect case =
+     6.2; low-affect case = 3.8 (N=20). (Methodology differed from
+     original study.) </ul></li>
+    <br> <li>Sarkissian, H., Chatterjee, A., De Brigard, F., Knobe, J., Nichols, S. & Sirker, S. (2010). <a href = "http://pantheon.yale.edu/~jk762/cultural-universal.pdf">Is Belief in Free Will a Cultural Universal?</a> <i>Mind & Language</i>, 25, 346-35.
+  <ul>82% of subjects in the United States sample, 85% in the India sample, 65% in the Hong Kong sample, and 77% in the Colombia sample responded that our universe is not deterministic (total N = 229).</ul>
+  <ul>75% of subjects in the United States sample, 72% in the India sample, 63% in the Hong Kong sample, and 68% in the Colombia sample responded that moral responsibility is not compatible with determinism (total N = 226).</ul></li>
+  </ul>
+  <br><i>Experiment 2</i>
+  <br>Percentage of participants saying agent fully morally responsible: low affect, determinist universe: 23%; low affect, indeterminist universe: 89%; high affect, determinist universe: 64%; high affect, indeterminist universe: 95% (N = 90).
+  <br>
+  <ul>
+  <br> <li>Feltz, A., & Cova, F. (2014). <a href="http://www.sciencedirect.com/science/article/pii/S1053810014001500">Moral responsibility and free will: A meta-analysis</a>. <i>Consciousness and Cognition</i>, 30, 234-246.
+  <ul><b>[Meta-Analysis]</b> A meta-analysis of 30 studies comparing low to high affect shows an overall effect of d=.15, p < .001.</ul>
+  </li>
+  <br> <li>Cova, Florian. (2012). Unpublished results.
+  <ul><b>[Non-Replication]</b> Experiment 1: Percentage of participants saying agent fully morally responsible: determinist universe, ketchup case: 30%; determinist universe, tax case: 30%; determinist universe, rape case: 37%; determinist universe, murder case: 37% (N = 120).</ul>
+  <ul><b>[Non-Replication]</b> Experiment 2: Percentage of participants saying agent fully morally responsible: low affect, determinist universe: 37%; low affect, indeterminist universe: 77%; high affect, determinist universe: 40%; high affect, indeterminist universe: 87% (N = 120).</ul>
+  <ul><b>[Non-Replication]</b> Experiment 3: Percentage of participants saying agent fully morally responsible: low affect, determinist universe: 27%; high affect, determinist universe: 33% (N = 60).</ul>
+  <ul><b>[Non-Replication]</b> Experiment 4: Mean agreement with statement that agent fully morally responsible: low affect, determinist universe: -1.2; low affect, indeterminist universe: 2.47; high affect, determinist universe: -0.55; high affect, indeterminist universe: 2.03 (-3 to 3 scale) (N = 120).</ul>
+  <ul><b>[Non-Replication]</b> Experiment 5: Percentage of participants saying agent fully morally responsible: determinist universe, ketchup case: 63%; determinist universe, tax case: 77%; determinist universe, rape case: 90%; determinist universe, murder case: 53% (N = 120).</ul>
+  </li>
+  </ul>
+</li>
+ <br>
+ <li>
+ <strong>Phillips, J. & Knobe, J. (2009). <a href ="http://www.unc.edu/~knobe/Freedom.pdf">Moral Judgments and Intuitions about Freedom</a>. <i>Psychological Inquiry</i>, 2, 30-36.</strong>
+ <br><i>Experiment 1</i>
+ <br>Mean ratings: captain forced to throw cargo overboard = 4.6; captain forced to throw wife overboard = 1.9 (N = 52).
+ <ul>
+ <br><li>Young, L. & Phillips, J. (2011). <a href = "http://pantheon.yale.edu/~jp677/YoungPhillipsCognitionIP.pdf">The Paradox of Moral Focus</a>. <i>Cognition</i>, 119, 166-178.
+ <ul>Experiment 1: participants judged that the sailor was forced less to throw the passengers overboard than the cargo (t(49)=2.15, p=0.037) (Methodology differed slightly from original study).</ul></li>
+ </ul>
+<i>Experiment 2</i>
+<br>Mean ratings: doctor forced to save patient = 4.9; doctor forced to kill patient = 2.9 (N = 56).
+<ul>
+ <br><li>Young, L. & Phillips, J. (2011). <a href = "http://pantheon.yale.edu/~jp677/YoungPhillipsCognitionIP.pdf">The Paradox of Moral Focus</a>. <i>Cognition</i>, 119, 166-178.
+<ul>Experiment 3: participants judged that the doctor was forced less to kill than to save (t(58)=1.93, p=0.058) (Methodology differed slightly from original study).</ul></li>
+ </ul>
+ </li>
+ <br>
+ <li>
+ <strong>Pinillos, N. Angel. (2012) <a href="https://4207b4d0-a-62cb3a1a-s-sites.googlegroups.com/site/napinillos/knowledgeexperimentsandpracticalinterests.pdf?attachauth=ANoY7cpjaumBsnSI2I4lMaIcICHj-_Vb8IdyKytHuhI5WhkxwWvgWedF-vwuSiBiRk1HbzN-qyMKQYu36tHdyP1xsaWvS3ylMDvsoab4WrsRQmh4SKIHeae7kWLO_Ts9SZ3LcV4U6oUjqIzGYi1p-T5kxABpbA8cLd9hpHuXYrajyI2X0-SJsjC6Fs26BYZgoO_ibl9kv8IV6Im10rjIS4742fyqhkYLfYhzciGSmTEhEpMDh3599qdNDxm4boNZT4CLgfn2InqP&attredirects=0">Knowledge, Experiments and Practical Interests</a>. in Jessica Brown & Mikkel Gerken (eds.), <i>New Essays On Knowledge Ascriptions</i>. Oxford University Press.</strong>
+ <br>Median ratings: typo low stakes = 2; typo high stakes = 5 (N = 144).
+ <ul>
+ <br><li>Buckwalter, W. (forthcoming). <a href="http://wfs.gc.cuny.edu/JBuckwalter/Buckwalter-MIA.pdf">The Mystery of Stakes and Error in Ascriber Intuitions</a>, in James Beebe (ed.), <i>Advances in Experimental Epistemology</i>. Continuum.
+ <ul>Mean ratings: typo low stakes knowledge = 2.61; typo high stakes knowledge = 5.12 (N = ~45).   </ul></li>
+ <li>Buckwalter, W. & Schaffer, J. <a href = "http://www.jonathanschaffer.org/mistakes.pdf">Knowledge, Stakes, and Mistakes"</a>.
+ <ul>Mean ratings: typo low stakes knowledge = 2.11; typo high stakes knowledge = 4.61 (N = ~93) (Methodology differed from original study -- authors used a shortened version of the high stakes vignette).</ul></li>
+ </ul>
+ </li>
+<br>
+<li>
+ <strong>Roxborough, C. & Cumby, J. (2009). <a href="http://www.unc.edu/~knobe/Roxborough-Cumby.pdf">Folk
+ Psychological Concepts: Causation</a>. <i>Philosophical
+ Psychology</i>, 22, 205-213.</strong>
+ <br> Mean ratings: professor caused = 0.90; administrative assistant caused = -0.98 (on scale from -3 to 3) (N = 118).
+ <ul>
+   <br><li>Sytsma, J., Livengood, J. & Rose, D. (forthcoming). <a
+ href="">Two types of typicality: Rethinking the role of statistical
+ typicality in ordinary causal attributions</a>. <i>Studies in History
+ and Philosophy of Science</i>.
+   <ul>Study 1: Mean ratings: professor caused = 4.41; administrative assistant caused = 2.98 (N = 51).</ul>
+   </li>
+   </ul>
+</li>
+ <br>
+ <li>
+ <strong>Sytsma, J. & Livengood, J. (2011). <a href=http://philsci-archive.pitt.edu/5130/1/A_New_Perspective_Concerning_Experiments_on_Semantic_Intuitions.pdf>A New Perspective Concerning Experiments on Semantic Intuitions</a>. <i>Australasian Journal of Philosophy</i>, 89, 315-332.</strong>
+ <br><i>Study 2: Clarified Narrator's Perspective</i>
+ <br>74% of non-philosophers (N = 84) said that 'G&ouml;del' referred to the person who claimed credit for the work; 76% of philosophers (N = 58) said that 'G&ouml;del' referred to the person who claimed credit for the work.
+ <ul>
+ <br><li>Beebe, J. & Undercoffer, R. <a href=http://www.acsu.buffalo.edu/~jbeebe2/Beebe%20Undercoffer%20Individual%20and%20Crosscultural%20Differences%20in%20Semantic%20Intuitions.pdf>Individual and Cross-Cultrual Differences in Semantic Intuitions: New Experimental Findings</a>. Unpublished.
+  <ul><b>[Non-Replication with modified materials]</b> Study 1c: 63% of Western participants (N = 257) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work; 48% of East Asian participants (N = 149) said that ‘Tsu Ch'ung Chih’ referred to the person who claimed credit for the work. (Methodology differed from the original study.)</ul>
+  </li>
+ </ul>
+ </li>
+ <br>
+<li>
+<strong>Webber, J. & Scaife, R. (forthcoming). <a
+  href="http://philpapers.org/rec/WEBI-2">Intentional Side-Effects of
+  Action</a>. <i>Journal of Moral Philosophy</i>.</strong>
+  <br><i>Experiment 1</i>
+  <br>45.2% of participants said chairman intentionally increased pollution (N = 42); 72.7% said chairman intentionally made factory less safe (N = 44).
+  <ul>
+  <br><li>Cova, F. (forthcoming). <a
+  href="http://experimentalphilosophy.typepad.com/files/scaifewebberinternet.doc">Unconsidered
+  intentional actions: An assessment of Scaife and Webber's
+  'Consideration Hypothesis'</a>. <i>Journal of Moral Philosophy</i>.<ul><b>[Non-Replication]</b> 58%
+  of subjects in the case with two side effects said the harmful side
+  effect was intentional (N = 50).</ul></li>
+  </ul>
+  <i>Experiment 2</i>
+  <br>66.3% of participants said parent had intentionally inflicted pain (N = 83)
+  <ul>
+  <br><li>Cova, F. (forthcoming). <a
+  href="http://experimentalphilosophy.typepad.com/files/scaifewebberinternet.doc">Unconsidered
+  intentional actions: An assessment of Scaife and Webber's
+  'Consideration Hypothesis'</a>. <i>Journal of Moral Philosophy</i>.<ul><b>[Non-Replication]</b> 73%
+  of subjects gave the parents the lowest possible intentionality rating (N = 60).</ul></li>
+  </ul>
+</li>
+<br>
+<li>
+<strong>Weinberg, J.M., Nichols, S. & Stich, S. (2001). <a href=http://www.rci.rutgers.edu/~stich/Publications/Papers/NormativityAndEpistemicIntuitions.pdf>
+Normativity and Epistemic Intuitions</a>. <i>Philosophical Topics</i>, 29, 429-460.</strong>
+<br><i>Individualistic Truetemp Cases</i>
+<br>32% of Westerners (N=189) say he really knows; 12% of East Asians (N=25) say he really knows.
+<ul>
+<br><li>Seyedsayamdost, H. (2013). <a href=http://philpapers.org/archive/SEYONA-2.pdf>
+On Normativity and Epistemic Intuitions: Failure of Replication</a>. Unpublished.
+<ul><b>[Non-Replication]</b> Data Set 2: 24% of Westerners (N=29) say he really knows; 17% of East Asians (N=30) say he really knows. (In addition, 24% of people from the Indian sub-continent (N=25) say he really knows.)</ul>
+<ul><b>[Non-Replication]</b> Data Set 3: 29% of Westerners (N=75) say he really knows; 28% of East Asians (N=36) say he really knows.</ul>
+</li>
+</ul>
+<br><i>Gettier Cases</i>
+<br>26% of Westerners (N=66) say he really knows; 56% of East Asians (N=23) say he really knows; 61% of people from the Indian sub-continent (N=23) say he really knows.
+<ul>
+<br><li>Nagel, J., San Juan, V. & Mar, R. (2013). <a href=http://www.yorku.ca/mar/Nagel%20et%20al%20in%20press_Cog_Lay%20denial%20of%20knowledge%20for%20justified%20true%20beliefs.pdf>Lay denial of knowledge for justified true beliefs</a>. <i>Cognition</i>, 129, 652-661.
+<ul><b>[Non-Replication with modified materials]</b> 32% of White participants (N=63) said he really knows; 29% of East Asian participants (N=21) said he really knows.  (Methodology differed from original study.)</ul>
+</li>
+<br><li>Seyedsayamdost, H. (2013). <a href=http://philpapers.org/archive/SEYONA-2.pdf>
+On Normativity and Epistemic Intuitions: Failure of Replication</a>. Unpublished.
+<ul><b>[Non-Replication]</b> Data Set 1: 14% of Westerners (N=83) say he really knows; 26% of East Asians (N=42) say he really knows; 15% of people from the Indian sub-continent (N=34) say he really knows.</ul>
+<ul><b>[Non-Replication]</b> Data Set 3: 23% of Westerners (N=75) say he really knows; 22% of East Asians (N=36) say he really knows.</ul>
+<ul><b>[Non-Replication]</b> Data Set 4: 16% of Westerners (N=198) say he really knows; 12% of East Asians (N=25) say he really knows; 38% of people from the Indian sub-continent (N=16) say he really knows.</ul>
+</li>
+<br><li>Kim, M.J. & Yuan, Y. (forthcoming) <a href="http://philpapers.org/rec/KIMNCD">No Cross-Cultural Differences in Gettier Car Case Intuition: A Replication Study of Weinberg et al. 2001</a>. <i>Episteme</i>.
+<ul><b>[Non-Replication]</b> 13.8% of caucasian participants (N = 58) said that he really knows; 14.6% of East Asian participants (N = 82) said that he really knows.</ul>
+</li>
+</ul>
+<br><i>Cancer Conspriacy Case</i>
+<br>10% of Westerners (N=66) say he really knows; 30% of people from the Indian sub-continent (N=23) say he really knows.
+<ul>
+<br><li>Seyedsayamdost, H. (2013). <a href=http://philpapers.org/archive/SEYONA-2.pdf>
+On Normativity and Epistemic Intuitions: Failure of Replication</a>. Unpublished.
+<ul><b>[Non-Replication]</b> Data Set 2: 14% of Westerners (N=35) say he really knows; 12% of people from the Indian sub-continent (N=34) say he really knows. (In addition, 26% of East Asians (N=42) say he really knows.)</ul>
+</li>
+</ul>
+<br><i>Epistemic Intuitions and Socioeconomic Status - Cancer Conspiracy Case</i>
+<br>50% of low SES participants (N=24) say he really knows; 17% of high SES participants (N=35) say he really knows.
+<ul>
+<br><li>Seyedsayamdost, H. (2013). <a href=http://philpapers.org/archive/SEYONA-2.pdf>
+On Normativity and Epistemic Intuitions: Failure of Replication</a>. Unpublished.
+<ul><b>[Non-Replication]</b> Template 1: 18% of low SES participants (N=38) say he really knows; 16% of high SES participants (N=69) say he really knows.</ul>
+<ul><b>[Non-Replication]</b> Template 2: 18% of low SES participants (N=45) say he really knows; 22% of high SES participants (N=87) say he really knows.</ul>
+</li>
+</ul>
+<br><i>Epistemic Intuitions and Socioeconomic Status - Zebra Case</i>
+<br>33% of low SES participants (N=24) say he really knows; 12% of high SES participants (N=34) say he really knows.
+<ul>
+<br><li>Seyedsayamdost, H. (2013). <a href=http://philpapers.org/archive/SEYONA-2.pdf>
+On Normativity and Epistemic Intuitions: Failure of Replication</a>. Unpublished.
+<ul><b>[Non-Replication]</b> Template 1: 32% of low SES participants (N=38) say he really knows; 28% of high SES participants (N=68) say he really knows.</ul>
+<ul><b>[Non-Replication]</b> Template 2: 28% of low SES participants (N=47) say he really knows; 23% of high SES participants (N=87) say he really knows.</ul>
+</li>
+</ul>
+</ol>
+
+  </div>
+
+ 
+
+  <div>
+  <strong></strong>
+  <br> 
+  </div>
+
+  <div>
+  <strong></strong>
+  <br> 
+  </div>
+
+  <!-- end .content --></div>
+  <div class="footer">
+    <p>If you have questions or concerns about this site, please get in touch with <a href="http://pantheon.yale.edu/~jp677/Jonathan_Phillips.html">Jonathan Phillips</a></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

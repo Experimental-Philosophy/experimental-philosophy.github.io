@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<LINK REL="SHORTCUT ICON" HREF="xphipage/favicon.ico">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Experimental Philosophy Page</title>
+<meta name="keywords" content="Experimental Philosophy" />
+<meta name="description"
+content="A resource for experimental philosophy papers, events, books, press, and more." />
+<meta name="robots" content="all" />
+<meta name="des" content="Experimental Philosophy">
+<meta property="og:title" content="The Experimental Philosophy Page" />
+<meta property="og:type" content="database" />
+<meta property="og:url" content="http://pantheon.yale.edu/~jk762/ExperimentalPhilosophy.html" />
+<meta property="og:site_name" content="The Experimental Philosophy Page" />
+<meta property="og:description" content="A resource for experimental philosophy papers, events, books, press, and more." />
+<link rel="stylesheet" type="text/css" href="./xphipage/style_test.css" media="screen" />
+<style type="text/css">
+
+.popout ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 200px; /* Main Menu Item widths */
+border-bottom: 1px;
+}
+ 
+.popout ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.popout ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: inherit;
+text-decoration: none;
+padding: 1px;
+border-bottom: 1px;
+border-right: 1px;
+}
+
+.popout ul li a:link, .popout ul li a:visited, .popout ul li a:active{
+background-color: inherit; /*background of tabs (default state)*/
+}
+
+.popout ul li a:visited{
+color: inherit;
+}
+
+.popout ul li a:hover{
+background-color: inherit;
+}
+
+/*Sub level menu items */
+.popout ul li ul{
+position: absolute;
+width: 200px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.popout a.subfolderstyle{
+background: inherit;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .popout ul li { float: left; height: 1%; }
+* html .popout ul li a { height: 1%; }
+/* End */
+
+</style>
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+<!-- This is the code for google analytics tracking. It's currently under the account managed by Jonathan Phillips. If you want to change this, please get in touch with Jonathan Phillips first: joanthan.phillips@yale.edu -->
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32586036-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+<!-- begin wrap -->
+<div id="wrap">
+	<!-- begin header -->
+	<div id="header">
+		<h1><a href="http://pantheon.yale.edu/~jk762/ExperimentalPhilosophy.html">Experimental Philosophy</a></h1>
+	  <ul>
+			<li><a
+	    href="http://experimentalphilosophy.typepad.com/experimental_philosophy/">Blog</a></li>
+	                <li><a
+	    href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Social%20Media.html">Social
+	    Media</a></li>
+	                <li><a
+	    href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Events.html">Events</a></li>
+            <li><a href="xphipage/Contact.html">Contact</a></li>
+		</ul>
+  </div>
+	<!-- end header -->
+	<!-- begin page -->
+	<div id="page"><!-- begin content -->
+<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">About Experimental Philosophy</a></h2>
+			  <div class="entry">
+				<p>	Welcome to the experimental philosophy page. Experimental philosophy, called x-phi for short, is a new philosophical movement that supplements the traditional tools of analytic philosophy with the scientific methods of cognitive science. So experimental philosophers actually go out and run systematic experiments aimed at understanding how people ordinarily think about the issues at the foundations of philosophical discussions.</p>
+			    <p>If you are you looking for a brief overview of experimental philosophy, you could try reading the <u><a href="http://www.nytimes.com/2007/12/09/magazine/09wwln-idealab-t.html"><i>New York Times</i> article</a></u>. </p>
+				</div>
+				
+			</div>
+			<div class="post">
+				<h2 class="title">Recent Books on X-Phi<a href="#"></a></h2>
+				<div class="entry">
+				<center>
+				   <a href="http://www.amazon.com/Philosophy-Experimental-Fritz-Allhoff-Ph-D/dp/0199775257/ref=sr_1_1?ie=UTF8&qid=1342056313&sr=8-1&keywords=philosophy+traditional+and+experimental+readings"><img
+  src="./xphipage/Experimental Philosophy-Books_files/Allhoff_Mallon_Nichols_Cover.jpg" width="122" height="151"
+  alt="" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <a href="http://www.amazon.com/Experimental-Philosophy-Introduction-Joshua-Alexander/dp/0745649181"><img
+  src="./xphipage/Experimental Philosophy-Books_files/Alexander_Cover.jpg" width="100" height="151"
+  alt="" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <a href="http://www.amazon.com/Experimental-Philosophy-Critics-Joachim-Horvath/dp/0415505135"><img
+  src="./xphipage/Experimental Philosophy-Books_files/Horvath_Grundmann_Cover.jpg" width="100" height="151"
+  alt="" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <a href="http://www.amazon.com/Experimental-Philosophy-Joshua-Knobe/dp/0195323262"><img
+  src="./xphipage/Experimental Philosophy-Books_files/Knobe_Nichols_XPhi1_Cover.jpg" width="100" height="151"
+  alt="" /></a></center>
+					 <div align="center">
+					 </div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<!-- end content -->
+		<!-- begin sidebar -->
+	  <div id="sidebar">
+			<ul>
+				<li>
+					<h2>Browse papers by topic</h2>
+					<div id="popout"><ul id="sidebarmenu1">
+            
+						<li><a href="#">X-Phi of Action</a>
+                        	<ul>
+                            	<li><a href="xphipage/Experimental Philosophy-Free Will.html">Free Will</a></li>
+                        		<li><a href="xphipage/Experimental Philosophy-Intentional Action.html">Intentional Action</a></li>
+                        		<li><a href="xphipage/Experimental Philosophy-Action Misc.html">Misc.</a></li>
+                            </ul>
+                        </li>
+						<li><a href="#">X-Phi of Language</a>
+                        	<ul>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Reference.html">Reference</a></li>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Language%20Misc.html">Misc.</a>
+ 							 </ul>
+                        </li>
+						<li><a href="#">X-Phi of Mind</a>
+                        	<ul>  
+                            	<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Consciousness.html">Consciousness</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Mind%20Misc.html">Misc.</a></li>
+  
+  							</ul>
+                        </li>
+						<li><a href="#">X-Phi of Ethics</a>
+                        	<ul>  
+                            	<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Folk%20Morality.html">Folk Morality</a></li>
+  <li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Ethics%20Misc.html">Misc.</a></li>
+  							</ul>
+                        </li>
+						<li><a href="#">X-Phi of Epistemology</a>
+                        	<ul>  
+                        		<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Contextualism%20Invariantism.html">Contextualism and Invariantism</a></li>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Epistemology%20Misc.html">Misc.</a>  </li>
+                        	</ul>
+                        </li>
+						<li><a href="#">X-Phi of Metaphysics</a>
+                        	<ul>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Causation.html">Causation</a></li>
+ 			 					<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Metaphysics%20Misc.html">Misc.</a></li>
+							</ul>
+                        </li>
+						<li><a href="#">Foundations of X-Phi</a>
+                        	<ul>
+ 	 							<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Critiques.html">Critiques of X-Phi</a></li>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Foundations%20Misc.html">Misc.</a></li>
+							</ul>
+                        </li>
+						<li><a href="#">Misc. X-Phi</a>
+                        	<ul>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Cross%20Cultural.html">Cross Cultural Research</a></li>
+  								<li><a href="http://pantheon.yale.edu/~jk762/xphipage/Experimental%20Philosophy-Misc.html">Misc.</a></li>
+							</ul>
+                        </li>
+                    </ul>
+				</li>
+                <p style="text-align: right;">&mdash; <cite>Powered by PhilPapers...</cite></p>
+				<li>
+				        <h2>search all x-phi
+                        papers</h2>
+				        <div class="pad">
+					        <ul>
+						  <form action="http://philpapers.org/browse/experimental-philosophy">
+  <input type="text" name="catq" value="" class="form" style="width:200px;">
+  <input type="hidden" name="sort" value="relevance">
+  <input type="submit" value="go" class="button" style="width:40px; height:30px">
+</form>
+						  </ul>
+						  </div>
+				</li>
+				<li>
+					<h2>other X-phi resources</h2>
+					<div class="pad">
+						<ul>
+						<li><a href="xphipage/Experimental Philosophy-Books.html">Books</a></li>
+						<li><a href="xphipage/Experimental Philosophy-Press.html">Press</a></li>
+						<li><a href="xphipage/Experimental Philosophy-Organizations.html">Labs and Organizations</a></li>
+					</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- end sidebar -->
+	</div>
+	<!-- end page -->
+	<!-- begin footer -->
+	<div id="footer">
+		<!-- All we ask of you is to keep this credits intact. We hope you don't mind :) -->
+		<p class="legal"><a href="http://www.thewebhub.com/2008/11/lightspeed/">Thanks to LightSpeed for the design</a></p>
+	</div>
+	<!-- end footer -->
+</div>
+<!-- end wrap -->
+</body>
+</html>
